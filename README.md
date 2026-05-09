@@ -34,6 +34,10 @@ Real-time production tool for mesh budget diagnostics, scene density review, and
 
 Built to help artists and technical artists identify density issues, budget risk, modifier impact, and scene complexity with clearer visual feedback inside Blender.
 
+<a href="https://github.com/ghbanck/PolyCount-Wizard">
+  <img src="https://img.shields.io/badge/View%20Repository-PolyCount%20Wizard-8AD0C9?style=for-the-badge&labelColor=111111" alt="View PolyCount Wizard repository">
+</a>
+
 ## Production Tooling Case Studies
 
 ### HS FE GuideTool
