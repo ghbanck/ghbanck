@@ -2,26 +2,29 @@
 
 **Technical Artist | Production Tools | Pipeline Support | Asset Validation | Workflow-Control Systems**
 
-I build production-facing tools, documentation, and workflows for artists, technical artists, and implementation teams.
+I build production-facing tools, documentation, and workflow systems for artists, technical artists, and implementation teams.
 
-My work sits between art production, technical constraints, content implementation, pipeline clarity, and workflow-control systems. I focus on turning ambiguous production problems into structured tools, safer handoff processes, repeatable validation logic, and clearer technical decisions.
+My work sits between art production, technical constraints, content implementation, pipeline clarity, validation logic, and workflow reliability. I focus on turning ambiguous production problems into structured tools, safer handoff processes, repeatable validation logic, and clearer technical decisions.
 
-I am not defined by a single DCC, engine, scripting language, or workflow domain. My strength is entering production systems, understanding the constraints, identifying hidden risk, and turning friction into clearer tools, safer workflows, validation logic, and traceable handoff.
+A core part of my strength is risk-first production thinking: I tend to red-team workflows before trusting them.
+
+I am not defined by a single DCC, engine, scripting language, or workflow domain. My strength is entering production systems, understanding their constraints, identifying hidden risk, and turning friction into clearer tools, safer workflows, validation logic, and traceable handoff.
 
 The platform can change. The method stays consistent: understand the production problem, structure the input, protect the operation, validate the output, and make the result easier to repeat.
+
 
 ---
 
 ## Core Direction
 
-I am currently expanding my tooling work across different production environments, technical constraints, and workflow types.
+I am currently expanding my tooling work across production environments, technical constraints, DCC workflows, and workflow-control systems.
 
-My focus is not simply writing scripts for tools I already know. It is building **production systems thinking** into any workflow that needs clearer input handling, classification, safety gates, validation, reporting, internal QA, documentation, and handoff clarity.
+My focus is not simply writing scripts for tools I already know. It is applying production systems thinking to workflows that need clearer input handling, classification, safety gates, validation, reporting, internal QA, documentation, and handoff clarity.
 
 Current public and documented work includes:
 
 * asset diagnostics, mesh review, and scene-density feedback;
-* scene organization, safe routing, and production handoff structure;
+* Maya scene organization, safe routing, and production handoff structure;
 * evidence-gated AI workflow claims, output review, and public control-gate architecture;
 * large-scale asset implementation, frontend consistency, and release-preparation workflows;
 * production automation that reduced roughly one week of manual post-hardlock work to about one minute through metadata checks, structured validation, and safer release-preparation support;
@@ -33,17 +36,24 @@ The specific software or pipeline may be familiar or completely new. What matter
 
 ## Selected Work
 
-| Project                               | Type                                       | Focus                                                                                           | Status                           |
-| ------------------------------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------- | -------------------------------- |
-| **PolyCount Wizard**                  | Public Production Tool                     | Mesh budget diagnostics, scene density review, object-level validation                          | Public                           |
-| **Maya Production Pipeliner**         | Tooling Lab / Production Scaffold          | Maya scene organization, safety-aware routing, production handoff clarity                       | Public scaffold / in development |
-| **MOI Control Gate** | Public Architecture / Control-Gate Thesis | Control-before-automation architecture for evidence boundaries, LLM output review, workflow trust, release boundaries, and epistemic drift control | Public architecture |
-| **MOI Lite Demo** | Public Demo / Façade Layer | Public-facing demonstration of MOI Lite’s evidence-gated demo layer; a small, sanitized slice of the private runtime’s control logic | Public demo |
-| **Production Workflow Control Study** | Mindset Guide / Compact Study              | Pipeline reliability, workflow control, internal QA, validation and handoff logic               | Public case study                |
-| **HS FE GuideTool**                   | Sanitized Internal Tool Case Study         | Frontend visual validation, framing consistency, canvas segmentation                            | Public portfolio case            |
-| **EOB Automation Tool** | Sanitized Production Automation Case Study | Post-hardlock release preparation, metadata checks, structured validation, and implementation consistency | Reduced roughly one week of manual work to about one minute |
-| **Edge QA Wizard**                    | Tooling Lab                                | Edge QA standardization, scalable asset review, project-wide technical consistency              | In development                   |
-| **Remesher Wizard**                   | Tooling Lab                                | Mesh cleanup, controlled remesh workflows, topology review                                      | In development                   |
+### Public Projects
+
+| Project                       | Type                                             | Focus                                                                                                                                              | Status                                |
+| ----------------------------- | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| **PolyCount Wizard**          | Public Production Tool / Documented Tooling Case | Mesh budget diagnostics, scene density review, object-level validation                                                                             | Public documentation / private source |
+| **Maya Production Pipeliner** | Tooling Lab / Production Scaffold                | Maya scene organization, safety-aware routing, production handoff clarity                                                                          | Public scaffold / in development      |
+| **MOI Control Gate**          | Public Architecture / Control-Gate Thesis        | Control-before-automation architecture for evidence boundaries, LLM output review, workflow trust, release boundaries, and epistemic drift control | Public architecture                   |
+| **MOI Lite Demo**             | Public Demo / Façade Layer                       | Public-facing demonstration of MOI Lite’s evidence-gated demo layer; a small, sanitized slice of the private runtime’s control logic               | Public demo                           |
+
+### Case Studies / Tooling Labs
+
+| Project                               | Type                                       | Focus                                                                                                     | Status                                                      |
+| ------------------------------------- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| **Production Workflow Control Study** | Mindset Guide / Compact Study              | Pipeline reliability, workflow control, internal QA, validation, and handoff logic                        | Public case study                                           |
+| **HS FE GuideTool**                   | Sanitized Internal Tool Case Study         | Frontend visual validation, framing consistency, canvas segmentation                                      | Public portfolio case                                       |
+| **EOB Automation Tool**               | Sanitized Production Automation Case Study | Post-hardlock release preparation, metadata checks, structured validation, and implementation consistency | Reduced roughly one week of manual work to about one minute |
+| **Edge QA Wizard**                    | Tooling Lab                                | Edge QA standardization, scalable asset review, project-wide technical consistency                        | In development                                              |
+| **Remesher Wizard**                   | Tooling Lab                                | Mesh cleanup, controlled remesh workflows, topology review                                                | In development                                              |
 
 ---
 
@@ -54,6 +64,12 @@ The specific software or pipeline may be familiar or completely new. What matter
 Production tool for mesh budget diagnostics, scene density review, and object-level validation.
 
 Built to help artists and technical artists identify density issues, budget risk, modifier impact, and scene complexity with clearer visual feedback and more direct production signals.
+
+The goal is not only to count polygons. The goal is to make technical review easier to read, easier to repeat, and easier to act on during production.
+
+Public scope: documentation, visual breakdown, testing status, and production-facing presentation.
+
+Private scope: source code and distributable builds unless prepared for public release.
 
 <a href="https://github.com/ghbanck/PolyCount-Wizard">
   <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
@@ -70,7 +86,21 @@ Tooling lab and temporary production scaffold for a Maya Python scene-organizati
 
 This project is currently in development. It documents and implements a Maya-native utility designed to turn messy scene hierarchies into readable production handoff structure before deeper validation, export, review, or downstream integration begins.
 
-The public repository focuses on scaffold structure, defensive design, manual test coverage, implementation boundaries, and pipeline-oriented planning. It is also a deliberate challenge: I am extending my tooling practice into a production area I am actively learning, while applying the same safety, validation, and handoff mindset I use when approaching unfamiliar technical systems.
+The public repository focuses on scaffold structure, defensive design, manual test coverage, implementation boundaries, and pipeline-oriented planning.
+
+The production problem behind the tool is simple: a Maya scene can become hard to read before it becomes technically invalid. Final meshes, test assets, references, cameras, lights, locators, rig-sensitive hierarchies, instanced geometry, hidden objects, namespaces, duplicate short names, and previous tool output can all coexist in ways that make handoff unclear.
+
+The intended workflow is:
+
+1. scan scene facts;
+2. classify objects;
+3. build a route plan;
+4. preserve unsafe or ambiguous content;
+5. preview changes through dry run;
+6. apply only safe operations;
+7. write traceable reports.
+
+This project is also a deliberate challenge: I am extending my tooling practice into a production area I am actively learning, while applying the same safety, validation, and handoff mindset I use when approaching unfamiliar technical systems.
 
 <a href="https://github.com/ghbanck/Maya-Production-Pipeliner">
   <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
@@ -83,15 +113,9 @@ The public repository focuses on scaffold structure, defensive design, manual te
 
 ### MOI Control Gate
 
-Public architecture repository for **control before automation**.
+Public architecture repository for control before automation.
 
 MOI Control Gate documents the broader thesis behind my workflow-control work: AI systems are already entering real production contexts, but fluent generation is not the hard part anymore. The hard part is deciding what a workflow is allowed to trust before model output becomes action.
-
-The project focuses on separating operational states that AI-assisted workflows often collapse:
-
-```text
-declared != evidenced != verified != approved
-```
 
 MOI Control Gate is about evidence boundaries, LLM output review, workflow reliability, human decision separation, release-boundary control, and epistemic drift control.
 
@@ -105,6 +129,7 @@ It is not a prompt pack, not a chatbot trick, and not a claim that a public runt
 </a>
 
 ---
+
 ### MOI Lite Demo
 
 Public façade for MOI Lite’s evidence-gated demo layer.
@@ -134,7 +159,7 @@ In the broader architecture, MOI Lite Demo is the lightweight public slice. MOI 
 
 ---
 
-## Mindset Guide / Compact Study
+## Mindset Guide / Pipeline Compact Study
 
 ### Production Workflow Control Study
 
@@ -239,7 +264,9 @@ This is why my tooling work is not limited to one environment. The specific plat
 
 A major part of my work is internal QA before implementation.
 
-I try to identify tool failure modes early, even when I am working in a tool or pipeline I am still learning. For example, before implementing a Maya scene organization tool, I mapped risks around references, instanced geometry, rig-sensitive hierarchies, display-layer visibility, long-name mutation, repeated execution, heavy-scene UI behavior, and report accuracy.
+My default approach is to red-team the workflow before trusting the tool. I look for hidden failure modes early: ambiguous input, unsafe automation, unclear ownership, repeated execution, fragile handoff, stale data, unverified output, and edge cases that can become expensive only after production pressure exposes them.
+
+For example, before implementing a Maya scene organization tool, I mapped risks around references, instanced geometry, rig-sensitive hierarchies, display-layer visibility, long-name mutation, repeated execution, heavy-scene UI behavior, and report accuracy.
 
 That is the standard I bring to production tooling: I do not wait for a bug to prove the risk exists. I look for the edge case, document it, and design the tool so the failure is harder to trigger.
 
@@ -251,18 +278,34 @@ I am currently organizing independent tools into public documentation, case stud
 
 Main areas of interest:
 
-* Technical Art
-* Tools and Pipeline
-* Asset Implementation
-* Content Validation
-* Workflow Automation
-* Production UX for artists
-* Production tooling across unfamiliar pipelines
-* Scene organization and handoff systems
-* Workflow-control architecture
-* Source-of-truth and validation systems
-* Evidence-gated AI workflow design
-* LLM output review and epistemic drift control
+### Technical Art and Production Tools
+
+- Technical Art
+- Tools and Pipeline
+- Asset Implementation
+- Content Validation
+- Workflow Automation
+- Production UX for artists
+- Production tooling across unfamiliar pipelines
+
+### Scene, Asset, and Handoff Systems
+
+- Scene organization and handoff systems
+- Asset diagnostics
+- Mesh review
+- Scene-density feedback
+- Edge QA standardization
+- Controlled remesh workflows
+- Reporting and test checklists
+
+### Workflow Control and Validation Systems
+
+- Workflow-control architecture
+- Source-of-truth and validation systems
+- Evidence-gated AI workflow design
+- LLM output review and epistemic drift control
+- Human decision separation
+- Release-boundary control
 
 ---
 
