@@ -1,56 +1,186 @@
 # Gustavo Henrique Banck
 
-**Technical Artist | Production Tools | Pipeline Support | Asset Validation**
+**Technical Artist | Production Tools | Pipeline Support | Asset Validation | Workflow-Control Systems**
 
-I build production-facing tools and workflows for artists, technical artists, and implementation teams.
+I build production-facing tools, documentation, and workflows for artists, technical artists, and implementation teams.
 
-My work sits between art production, technical constraints, and content implementation, with a focus on asset validation, workflow clarity, pipeline support, and scalable production decisions.
+My work sits between art production, technical constraints, content implementation, pipeline clarity, and workflow-control systems. I focus on turning ambiguous production problems into structured tools, safer handoff processes, repeatable validation logic, and clearer technical decisions.
 
-## Focus
+I am not defined by a single DCC, engine, scripting language, or workflow domain. My strength is entering production systems, understanding the constraints, identifying hidden risk, and turning friction into clearer tools, safer workflows, validation logic, and traceable handoff.
 
-- Production tools for artists and technical artists
-- Blender add-ons and pipeline utilities
-- Mesh budget diagnostics and asset validation
-- Frontend and presentation consistency tools
-- Workflow automation for repetitive implementation tasks
-- Unreal Engine asset implementation and content integration
-- UI/UX quality for internal production tools
+The platform can change. The method stays consistent: understand the production problem, structure the input, protect the operation, validate the output, and make the result easier to repeat.
+
+---
+
+## Core Direction
+
+I am currently expanding my tooling work across different production environments, technical constraints, and workflow types.
+
+My focus is not simply writing scripts for tools I already know. It is building **production systems thinking** into any workflow that needs clearer input handling, classification, safety gates, validation, reporting, internal QA, documentation, and handoff clarity.
+
+Current public and documented work includes:
+
+* asset diagnostics, mesh review, and scene-density feedback;
+* scene organization, safe routing, and production handoff structure;
+* evidence-gated AI workflow claims, output review, and public control-gate architecture;
+* large-scale asset implementation, frontend consistency, and release-preparation workflows;
+* production automation that reduced roughly one week of manual post-hardlock work to about one minute through metadata checks, structured validation, and safer release-preparation support;
+* pipeline documentation that turns complex technical behavior into readable implementation plans, test checklists, and public-facing project structure.
+
+The specific software or pipeline may be familiar or completely new. What matters is the production problem, the constraints around it, the risk of getting it wrong, and the structure needed to make the workflow reliable.
+
+---
 
 ## Selected Work
 
-| Project | Type | Focus | Status |
-|---|---|---|---|
-| **PolyCount Wizard** | Independent Tool | Mesh budget diagnostics, scene density review, asset validation | Public documentation |
-| **HS FE GuideTool** | Professional Case Study | Frontend visual validation, framing consistency, canvas segmentation | Sanitized case study |
-| **EOB Automation Tool** | Professional Case Study | Release preparation, structured data validation, implementation consistency | Sanitized case study |
-| **Edge QA Wizard** | Tooling Lab | Edge QA standardization, scalable asset review, project-wide technical consistency | In development |
-| **Remesher Wizard** | Tooling Lab | Mesh cleanup, controlled remesh workflows, topology review | In development |
+| Project                               | Type                                       | Focus                                                                                           | Status                           |
+| ------------------------------------- | ------------------------------------------ | ----------------------------------------------------------------------------------------------- | -------------------------------- |
+| **PolyCount Wizard**                  | Public Production Tool                     | Mesh budget diagnostics, scene density review, object-level validation                          | Public                           |
+| **Maya Production Pipeliner**         | Tooling Lab / Production Scaffold          | Maya scene organization, safety-aware routing, production handoff clarity                       | Public scaffold / in development |
+| **MOI Control Gate** | Public Architecture / Control-Gate Thesis | Control-before-automation architecture for evidence boundaries, LLM output review, workflow trust, release boundaries, and epistemic drift control | Public architecture |
+| **MOI Lite Demo** | Public Demo / Façade Layer | Public-facing demonstration of MOI Lite’s evidence-gated demo layer; a small, sanitized slice of the private runtime’s control logic | Public demo |
+| **Production Workflow Control Study** | Mindset Guide / Compact Study              | Pipeline reliability, workflow control, internal QA, validation and handoff logic               | Public case study                |
+| **HS FE GuideTool**                   | Sanitized Internal Tool Case Study         | Frontend visual validation, framing consistency, canvas segmentation                            | Public portfolio case            |
+| **EOB Automation Tool** | Sanitized Production Automation Case Study | Post-hardlock release preparation, metadata checks, structured validation, and implementation consistency | Reduced roughly one week of manual work to about one minute |
+| **Edge QA Wizard**                    | Tooling Lab                                | Edge QA standardization, scalable asset review, project-wide technical consistency              | In development                   |
+| **Remesher Wizard**                   | Tooling Lab                                | Mesh cleanup, controlled remesh workflows, topology review                                      | In development                   |
 
-## Featured Project
+---
+
+## Featured Projects
 
 ### PolyCount Wizard
 
-Real-time production tool for mesh budget diagnostics, scene density review, and object-level budget validation.
+Production tool for mesh budget diagnostics, scene density review, and object-level validation.
 
-Built to help artists and technical artists identify density issues, budget risk, modifier impact, and scene complexity with clearer visual feedback inside Blender.
+Built to help artists and technical artists identify density issues, budget risk, modifier impact, and scene complexity with clearer visual feedback and more direct production signals.
 
 <a href="https://github.com/ghbanck/PolyCount-Wizard">
-  <img src="https://img.shields.io/badge/View%20Repository-PolyCount%20Wizard-8AD0C9?style=for-the-badge&labelColor=111111" alt="View PolyCount Wizard repository">
+  <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
 </a>
+<a href="https://github.com/ghbanck/PolyCount-Wizard">
+  <img src="https://img.shields.io/badge/PolyCount_Wizard-9AD7D2?style=for-the-badge" alt="PolyCount Wizard">
+</a>
+
+---
+
+### Maya Production Pipeliner
+
+Tooling lab and temporary production scaffold for a Maya Python scene-organization utility.
+
+This project is currently in development. It documents and implements a Maya-native utility designed to turn messy scene hierarchies into readable production handoff structure before deeper validation, export, review, or downstream integration begins.
+
+The public repository focuses on scaffold structure, defensive design, manual test coverage, implementation boundaries, and pipeline-oriented planning. It is also a deliberate challenge: I am extending my tooling practice into a production area I am actively learning, while applying the same safety, validation, and handoff mindset I use when approaching unfamiliar technical systems.
+
+<a href="https://github.com/ghbanck/Maya-Production-Pipeliner">
+  <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
+</a>
+<a href="https://github.com/ghbanck/Maya-Production-Pipeliner">
+  <img src="https://img.shields.io/badge/Maya_Production_Pipeliner-9AD7D2?style=for-the-badge" alt="Maya Production Pipeliner">
+</a>
+
+---
+
+### MOI Control Gate
+
+Public architecture repository for **control before automation**.
+
+MOI Control Gate documents the broader thesis behind my workflow-control work: AI systems are already entering real production contexts, but fluent generation is not the hard part anymore. The hard part is deciding what a workflow is allowed to trust before model output becomes action.
+
+The project focuses on separating operational states that AI-assisted workflows often collapse:
+
+```text
+declared != evidenced != verified != approved
+```
+
+MOI Control Gate is about evidence boundaries, LLM output review, workflow reliability, human decision separation, release-boundary control, and epistemic drift control.
+
+It is not a prompt pack, not a chatbot trick, and not a claim that a public runtime has been deployed. It is the public architecture layer for the method: a way to expose and constrain the behaviors that make AI workflows look complete before they are actually verified.
+
+<a href="https://github.com/ghbanck/MOI-Control-Gate">
+  <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
+</a>
+<a href="https://github.com/ghbanck/MOI-Control-Gate">
+  <img src="https://img.shields.io/badge/MOI_Control_Gate-9AD7D2?style=for-the-badge" alt="MOI Control Gate">
+</a>
+
+---
+### MOI Lite Demo
+
+Public façade for MOI Lite’s evidence-gated demo layer.
+
+MOI Lite Demo is not the private functional runtime. It is a small public-facing demonstration of the response boundary behind MOI Lite: how a backend-backed workflow can refuse to treat unsupported claims, fluent answers, or declared approvals as operational truth.
+
+The demo keeps the public concept simple:
+
+```text
+declared != verified != approved
+```
+
+A model can generate.
+A workflow can look complete.
+A person can approve an action.
+
+MOI Lite Demo shows why those states must stay separated. It presents the evidence-gated behavior in public scope while keeping private runtime code, operational prompts, enforcement logic, traces, and production internals out of the repository.
+
+In the broader architecture, MOI Lite Demo is the lightweight public slice. MOI Control Gate carries the larger control-system thesis.
+
+<a href="https://github.com/ghbanck/MOI-Lite-Demo">
+  <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
+</a>
+<a href="https://github.com/ghbanck/MOI-Lite-Demo">
+  <img src="https://img.shields.io/badge/MOI_Lite_Demo-9AD7D2?style=for-the-badge" alt="MOI Lite Demo">
+</a>
+
+---
+
+## Mindset Guide / Compact Study
+
+### Production Workflow Control Study
+
+Compact public case study presenting my production mindset: how I structure ambiguous pipeline problems, identify hidden risks before implementation, define safety boundaries, and turn workflow friction into clearer execution logic.
+
+This case is my public-facing pipeline constitution: a concise guide to how I think across tools, production support, internal QA, validation, source-of-truth handling, and handoff systems.
+
+<a href="https://www.artstation.com/artwork/XJyKXl">
+  <img src="https://img.shields.io/badge/View_Case_Study-111111?style=for-the-badge" alt="View Case Study">
+</a>
+<a href="https://www.artstation.com/artwork/XJyKXl">
+  <img src="https://img.shields.io/badge/Workflow_Control_Study-9AD7D2?style=for-the-badge" alt="Workflow Control Study">
+</a>
+
+---
 
 ## Production Tooling Case Studies
 
 ### HS FE GuideTool
 
-Frontend visual validation tool developed in a professional production context to improve framing consistency, canvas segmentation, and presentation review workflows.
+Sanitized case study demonstrating my thinking behind an internal production tool created in a professional Epic Games context.
 
-Designed to replace manual visual-reference workarounds with precise guide generation, real-time layout feedback, and repeatable presentation checks for implementation teams.
+The tool focused on frontend visual validation, framing consistency, canvas segmentation, and repeatable presentation review workflows.
+
+This case represents my approach to tooling: identify repeated manual judgment, convert it into a clearer visual system, and reduce inconsistency without removing the artist or implementer from the loop.
+
+<a href="https://www.artstation.com/artwork/nJaK04">
+  <img src="https://img.shields.io/badge/View_Portfolio_Case-111111?style=for-the-badge" alt="View Portfolio Case">
+</a>
+<a href="https://www.artstation.com/artwork/nJaK04">
+  <img src="https://img.shields.io/badge/HS_FE_GuideTool-9AD7D2?style=for-the-badge" alt="HS FE GuideTool">
+</a>
+
+---
 
 ### EOB Automation Tool
 
-End-of-build workflow automation tool developed to reduce repetitive manual implementation setup and improve consistency during release preparation.
+Sanitized production automation case study based on end-of-build workflow support.
 
-Focused on turning structured production data into safer and faster implementation actions for final asset setup, naming, tags, LOD-related checks, frontend setup, and release-readiness validation.
+Built to reduce repetitive post-hardlock implementation work during release preparation by automating metadata checks, structuring validation steps, and improving consistency across final asset setup tasks.
+
+The tool reduced roughly one week of manual post-hardlock work to about one minute by converting repeated release-preparation actions into a faster, more structured automation flow.
+
+This case represents my approach to production automation: identify repeated manual production friction, automate the parts where the logic is clear, preserve review where human judgment matters, and make the final output easier to verify.
+
+---
 
 ## Tooling Lab / In Development
 
@@ -58,7 +188,7 @@ Focused on turning structured production data into safer and faster implementati
 
 Production QA tool for standardizing edge review, edge treatment, and geometry validation across a full project.
 
-Designed to support predefined QA rules, consistent review signals, and scalable edge treatment workflows, helping artists and technical artists apply the same technical standard across multiple assets instead of reviewing edge issues case by case.
+Designed to support predefined QA rules, consistent review signals, and scalable asset review workflows, helping artists and technical artists apply the same technical standard across multiple assets instead of reviewing edge issues case by case.
 
 ### Remesher Wizard
 
@@ -66,36 +196,85 @@ Production-oriented mesh cleanup and remeshing assistant for controlled topology
 
 Designed as a workflow support tool for testing cleanup behavior, reviewing topology conditions, and reducing repetitive manual mesh preparation steps.
 
+---
+
 ## Production Background
 
 Former Fortnite asset implementation experience supporting high-volume live-service content delivery, asset setup, presentation consistency, troubleshooting, and workflow improvement.
 
 Selected production impact:
 
-- Supported Fortnite cosmetic implementation and pipeline improvement work across 7 live-service seasons in Unreal Engine
-- Contributed to implementation, validation, fixing, and maintenance of high-volume cosmetic assets from internal and external sources
-- Resolved a release-critical backlog of roughly 500 pickaxe presentation issues in less than one week under hard production deadline
-- Created HS FE GuideTool to standardize frontend framing validation, canvas segmentation, and visual presentation checks
-- Created EOB automation tooling to reduce repetitive post-hardlock setup work and improve implementation consistency during release preparation
-- Proposed a single-source-of-truth pipeline direction connecting upstream production inputs to final Unreal outputs through validation, ID synchronization, structured data generation, and output logging
+* Supported Fortnite cosmetic implementation and pipeline improvement work across 7 live-service seasons in Unreal Engine
+* Contributed to implementation, validation, fixing, and maintenance of high-volume cosmetic assets from internal and external sources
+* Resolved a release-critical backlog of roughly 500 pickaxe presentation issues in less than one week under hard production deadline
+* Created HS FE GuideTool to standardize frontend framing validation, canvas segmentation, and visual presentation checks
+* Created EOB automation tooling to reduce repetitive post-hardlock setup work and improve implementation consistency during release preparation
+* Proposed a single-source-of-truth pipeline direction connecting upstream production inputs to final Unreal outputs through validation, ID synchronization, structured data generation, and output logging
 
 Broader production experience includes technical art, 3D asset production, scene assembly, technical integration, Unity and Unreal workflows, QA support, documentation, and cross-discipline collaboration.
 
+---
+
 ## Tooling Philosophy
 
-I do not treat tools as isolated scripts. A useful production tool should reduce ambiguity, communicate state clearly, prevent avoidable errors, and support repeatable decisions.
+I do not treat tools as isolated scripts.
 
-My current tooling work focuses on making technical constraints easier for artists to read, turning production pain points into clear workflows, improving consistency across repeated asset reviews, and reducing manual validation work where automation is safe.
+A useful production tool should reduce ambiguity, communicate state clearly, prevent avoidable errors, and support repeatable decisions.
+
+My current tooling work is built around a few principles:
+
+* understand the production problem before building the feature;
+* learn the pipeline deeply enough to respect its constraints;
+* identify hidden failure modes before they become expensive bugs;
+* separate raw input, classification, execution, validation, and handoff;
+* protect sensitive or ambiguous data instead of forcing unsafe automation;
+* keep reports and test checklists close to the implementation;
+* design tools that help artists move faster without lowering the technical bar.
+
+This is why my tooling work is not limited to one environment. The specific platform, toolset, language, or pipeline can change, but the production method stays consistent: clarify the input, protect the operation, validate the result, and make the handoff traceable.
+
+---
+
+## Internal Quality Method
+
+A major part of my work is internal QA before implementation.
+
+I try to identify tool failure modes early, even when I am working in a tool or pipeline I am still learning. For example, before implementing a Maya scene organization tool, I mapped risks around references, instanced geometry, rig-sensitive hierarchies, display-layer visibility, long-name mutation, repeated execution, heavy-scene UI behavior, and report accuracy.
+
+That is the standard I bring to production tooling: I do not wait for a bug to prove the risk exists. I look for the edge case, document it, and design the tool so the failure is harder to trigger.
+
+---
 
 ## Current Direction
 
 I am currently organizing independent tools into public documentation, case studies, GitHub repositories, and portfolio-ready releases.
 
-Main areas of interest: Technical Art, Tools and Pipeline, Asset Implementation, Content Validation, Workflow Automation, and Production UX for artists.
+Main areas of interest:
+
+* Technical Art
+* Tools and Pipeline
+* Asset Implementation
+* Content Validation
+* Workflow Automation
+* Production UX for artists
+* Production tooling across unfamiliar pipelines
+* Scene organization and handoff systems
+* Workflow-control architecture
+* Source-of-truth and validation systems
+* Evidence-gated AI workflow design
+* LLM output review and epistemic drift control
+
+---
 
 ## Links
 
-- ArtStation: https://ghbanck.artstation.com
-- LinkedIn: https://www.linkedin.com/in/gustavo-banck
-- Email: gustavohenriquebanck@gmail.com
-
+* ArtStation: https://ghbanck.artstation.com
+* LinkedIn: https://www.linkedin.com/in/gustavo-banck
+* GitHub: https://github.com/ghbanck
+* PolyCount Wizard: https://github.com/ghbanck/PolyCount-Wizard
+* Maya Production Pipeliner: https://github.com/ghbanck/Maya-Production-Pipeliner
+* MOI Control Gate: https://github.com/ghbanck/MOI-Control-Gate
+* MOI Lite Demo: https://github.com/ghbanck/MOI-Lite-Demo
+* Production Workflow Control Study: https://www.artstation.com/artwork/XJyKXl
+* HS FE GuideTool: https://www.artstation.com/artwork/nJaK04
+* Email: [gustavohenriquebanck@gmail.com](mailto:gustavohenriquebanck@gmail.com)
