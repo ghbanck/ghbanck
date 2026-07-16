@@ -82,25 +82,44 @@ Private scope: source code and distributable builds unless prepared for public r
 
 ### Maya Production Pipeliner
 
-Tooling lab and temporary production scaffold for a Maya Python scene-organization utility.
+Safety-aware Maya Python utility for scene organization and production handoff.
 
-This project is currently in development. It documents and implements a Maya-native utility designed to turn messy scene hierarchies into readable production handoff structure before deeper validation, export, review, or downstream integration begins.
+This project implements a working Maya-native runtime that turns messy scene
+hierarchies into readable production handoff structure before deeper validation,
+export, review, or downstream integration begins.
 
-The public repository focuses on scaffold structure, defensive design, manual test coverage, implementation boundaries, and pipeline-oriented planning.
+The public repository contains the implemented core runtime (scanner, classifier,
+organizer, reporter, pipeline orchestrator, and minimal UI), defensive design
+documentation, data contracts, and per-slice manual Maya validation evidence.
 
-The production problem behind the tool is simple: a Maya scene can become hard to read before it becomes technically invalid. Final meshes, test assets, references, cameras, lights, locators, rig-sensitive hierarchies, instanced geometry, hidden objects, namespaces, duplicate short names, and previous tool output can all coexist in ways that make handoff unclear.
+The production problem behind the tool is simple: a Maya scene can become hard
+to read before it becomes technically invalid. Final meshes, test assets,
+references, cameras, lights, locators, rig-sensitive hierarchies, instanced
+geometry, hidden objects, namespaces, duplicate short names, and previous tool
+output can all coexist in ways that make handoff unclear.
 
-The intended workflow is:
+The implemented workflow is:
 
 1. scan scene facts;
-2. classify objects;
+2. classify objects into handoff routes;
 3. build a route plan;
-4. preserve unsafe or ambiguous content;
-5. preview changes through dry run;
-6. apply only safe operations;
-7. write traceable reports.
+4. preserve unsafe or ambiguous content — referenced, instanced, and
+   rig/deformer-sensitive nodes remain report-only and are never moved;
+5. preview changes through a strictly non-mutating Dry Run;
+6. Apply safe operations inside a single named undo chunk, with validated
+   idempotent re-execution;
+7. write traceable TXT/JSON reports.
 
-This project is also a deliberate challenge: I am extending my tooling practice into a production area I am actively learning, while applying the same safety, validation, and handoff mindset I use when approaching unfamiliar technical systems.
+Dry Run and Apply are implemented and validated through a validation-script
+suite and a per-slice manual test checklist, covering mayapy runs and Maya
+2027.1 smoke validation. Leaf reclassification after user edits is the
+remaining open case, and the tool is intentionally not yet marked
+release-ready.
+
+This project also marks a deliberate return: I started my career in Maya in
+2018 and worked with Maya rigs, imports, and exports in AAA production before
+years of Blender-focused tooling. The Pipeliner applies that same safety,
+validation, and handoff mindset back to Maya-native tooling at production depth.
 
 <a href="https://github.com/ghbanck/Maya-Production-Pipeliner">
   <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
