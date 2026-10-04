@@ -26,6 +26,8 @@ Current public and documented work includes:
 * asset diagnostics, mesh review, and scene-density feedback;
 * Maya scene organization, safe routing, and production handoff structure;
 * evidence-gated AI workflow claims, output review, and public control-gate architecture;
+* UV-driven texture transfer design for Blender, documented before implementation;
+* native Windows desktop applications with GPU rendering, tray UX, and portable single-file releases;
 * large-scale asset implementation, frontend consistency, and release-preparation workflows;
 * production automation that reduced roughly one week of manual post-hardlock work to about one minute through metadata checks, structured validation, and safer release-preparation support;
 * pipeline documentation that turns complex technical behavior into readable implementation plans, test checklists, and public-facing project structure.
@@ -44,6 +46,14 @@ The specific software or pipeline may be familiar or completely new. What matter
 | **Maya Production Pipeliner** | Tooling Lab / Production Scaffold                | Maya scene organization, safety-aware routing, production handoff clarity                                                                          | Public scaffold / in development      |
 | **MOI Control Gate**          | Public Architecture / Control-Gate Thesis        | Control-before-automation architecture for evidence boundaries, LLM output review, workflow trust, release boundaries, and epistemic drift control | Public architecture                   |
 | **MOI Lite Demo**             | Public Demo / Façade Layer                       | Public-facing demonstration of MOI Lite’s evidence-gated demo layer; a small, sanitized slice of the private runtime’s control logic               | Public demo                           |
+| **UV Carry**                  | Blender Add-on / Design-First Project            | Move a UV island and carry its texture content across every PBR map, with transactional rollback and documented validation gates                  | Pre-implementation / public design    |
+
+### Desktop Projects
+
+| Project                   | Type                               | Focus                                                                                         | Status         |
+| ------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------- | -------------- |
+| **GameOfLife Wallpaper**  | Windows Desktop App (Python)       | Conway's Game of Life as a live, drawable wallpaper behind the desktop icons, Direct3D 11      | Public release |
+| **Vaporwave Toons**       | Windows Desktop App (C# / .NET)    | XPenguins' Vaporwave theme ported to Windows 10/11: toons that walk, climb and ride on windows | Public release |
 
 ### Case Studies / Tooling Labs
 
@@ -174,6 +184,61 @@ In the broader architecture, MOI Lite Demo is the lightweight public slice. MOI 
 </a>
 <a href="https://github.com/ghbanck/MOI-Lite-Demo">
   <img src="https://img.shields.io/badge/MOI_Lite_Demo-9AD7D2?style=for-the-badge" alt="MOI Lite Demo">
+</a>
+
+---
+
+### UV Carry
+
+Blender add-on in design: move a UV island and carry its texture content across every PBR map.
+
+Moving, rotating, or scaling a UV island normally leaves the painted texture behind. UV Carry is designed so the texture content assigned to a complete island follows the island across the whole PBR image set, including tangent-space normal reprojection, inside a single transaction that can be committed or rolled back.
+
+The repository is intentionally design-first. The Project Bible defines product behavior; architecture, data contracts, error model, compatibility matrix, and acceptance gates are documented before runtime code exists. A repository check keeps documentation, state vocabulary, and the pure-domain dependency rule consistent in CI.
+
+Current state: conception / pre-implementation. No runtime capability is claimed until a gate report proves it.
+
+<a href="https://github.com/ghbanck/UV-Carry">
+  <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
+</a>
+<a href="https://github.com/ghbanck/UV-Carry">
+  <img src="https://img.shields.io/badge/UV_Carry-9AD7D2?style=for-the-badge" alt="UV Carry">
+</a>
+
+---
+
+## Desktop Projects
+
+### GameOfLife Wallpaper
+
+Conway's Game of Life running as a live Windows wallpaper, behind the desktop icons and never covering an application.
+
+A draw mode toggled by hotkey or tray icon turns desktop clicks into cells while every other click still goes where it always did. Rendering runs on Direct3D 11 and DirectComposition, and the simulation pauses on its own when nobody can see it: covered desktop, full-screen apps, locked session, display off, or battery saver.
+
+It ships with a ~4,800-pattern library from the Life Lexicon and LifeWiki, saved worlds, RLE / `.cells` / Life 1.06 import, eight palettes, alternative rules, and English and Portuguese UI. Distributed as a single portable `.exe`, with tests in CI.
+
+<a href="https://github.com/ghbanck/GameOfLife-Wallpaper">
+  <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
+</a>
+<a href="https://github.com/ghbanck/GameOfLife-Wallpaper">
+  <img src="https://img.shields.io/badge/GameOfLife_Wallpaper-9AD7D2?style=for-the-badge" alt="GameOfLife Wallpaper">
+</a>
+
+---
+
+### Vaporwave Toons
+
+The Vaporwave theme for XPenguins, brought to Windows 10 and 11.
+
+Eight toons drop onto the desktop, walk along title bars, climb window edges, ride windows as they move, and get squashed when a window is dragged onto them. The port adapts XPenguins' behavior to how Windows is actually used: maximized and snapped windows count as background, only a moving window squashes, and falling toons accelerate under gravity.
+
+Written in C# on .NET Framework 4.8 as a single small `.exe`, with no installer, no admin rights, a tray menu for every option, and English and Portuguese UI.
+
+<a href="https://github.com/ghbanck/Vaporwave-Toons">
+  <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
+</a>
+<a href="https://github.com/ghbanck/Vaporwave-Toons">
+  <img src="https://img.shields.io/badge/Vaporwave_Toons-9AD7D2?style=for-the-badge" alt="Vaporwave Toons">
 </a>
 
 ---
@@ -337,6 +402,9 @@ Main areas of interest:
 * Maya Production Pipeliner: https://github.com/ghbanck/Maya-Production-Pipeliner
 * MOI Control Gate: https://github.com/ghbanck/MOI-Control-Gate
 * MOI Lite Demo: https://github.com/ghbanck/MOI-Lite-Demo
+* UV Carry: https://github.com/ghbanck/UV-Carry
+* GameOfLife Wallpaper: https://github.com/ghbanck/GameOfLife-Wallpaper
+* Vaporwave Toons: https://github.com/ghbanck/Vaporwave-Toons
 * Production Workflow Control Study: https://www.artstation.com/artwork/XJyKXl
 * HS FE GuideTool: https://www.artstation.com/artwork/nJaK04
 * Email: [gustavohenriquebanck@gmail.com](mailto:gustavohenriquebanck@gmail.com)
