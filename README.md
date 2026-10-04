@@ -71,6 +71,14 @@ The specific software or pipeline may be familiar or completely new. What matter
 
 ### PolyCount Wizard
 
+<p>
+  <a href="https://github.com/ghbanck/PolyCount-Wizard/blob/main/NOTICE.md"><img alt="License: all rights reserved" src="https://img.shields.io/badge/license-all%20rights%20reserved-6e7681"></a>
+  <img alt="Platform: Blender" src="https://img.shields.io/badge/platform-Blender-0078d4">
+  <a href="https://github.com/ghbanck/PolyCount-Wizard/blob/main/TESTING_STATUS.md"><img alt="QA: Blender 5.1.1" src="https://img.shields.io/badge/QA-Blender%205.1.1-8250df"></a>
+  <a href="https://github.com/ghbanck/PolyCount-Wizard/blob/main/TESTING_STATUS.md"><img alt="Runtime QA: 27 pass, 0 fail" src="https://img.shields.io/badge/runtime%20QA-27%20pass%20%7C%200%20fail-3fb950"></a>
+  <img alt="Source: private" src="https://img.shields.io/badge/source-private-6e7681">
+</p>
+
 Production tool for mesh budget diagnostics, scene density review, and object-level validation.
 
 Built to help artists and technical artists identify density issues, budget risk, modifier impact, and scene complexity with clearer visual feedback and more direct production signals.
@@ -91,6 +99,14 @@ Private scope: source code and distributable builds unless prepared for public r
 ---
 
 ### Maya Production Pipeliner
+
+<p>
+  <a href="https://github.com/ghbanck/Maya-Production-Pipeliner/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-3fb950"></a>
+  <img alt="Platform: Autodesk Maya" src="https://img.shields.io/badge/platform-Autodesk%20Maya-0078d4">
+  <img alt="Python: mayapy" src="https://img.shields.io/badge/python-mayapy-3776ab">
+  <img alt="Smoke validated: Maya 2027.1" src="https://img.shields.io/badge/smoke%20validated-Maya%202027.1-8250df">
+  <img alt="Status: not release-ready" src="https://img.shields.io/badge/status-not%20release--ready-d29922">
+</p>
 
 Safety-aware Maya Python utility for scene organization and production handoff.
 
@@ -142,6 +158,12 @@ validation, and handoff mindset back to Maya-native tooling at production depth.
 
 ### MOI Control Gate
 
+<p>
+  <a href="https://github.com/ghbanck/MOI-Control-Gate/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-3fb950"></a>
+  <img alt="Repository: docs only" src="https://img.shields.io/badge/repository-docs%20only-8250df">
+  <a href="https://github.com/ghbanck/MOI-Lite-Demo"><img alt="Related: MOI-Lite-Demo" src="https://img.shields.io/badge/related-MOI--Lite--Demo-0078d4"></a>
+</p>
+
 Public architecture repository for control before automation.
 
 MOI Control Gate documents the broader thesis behind my workflow-control work: AI systems are already entering real production contexts, but fluent generation is not the hard part anymore. The hard part is deciding what a workflow is allowed to trust before model output becomes action.
@@ -160,6 +182,14 @@ It is not a prompt pack, not a chatbot trick, and not a claim that a public runt
 ---
 
 ### MOI Lite Demo
+
+<p>
+  <a href="https://github.com/ghbanck/MOI-Lite-Demo/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-3fb950"></a>
+  <img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-3776ab">
+  <img alt="Framework: FastAPI" src="https://img.shields.io/badge/framework-FastAPI-009688">
+  <img alt="Mode: public demo" src="https://img.shields.io/badge/mode-public%20demo-8250df">
+  <a href="https://github.com/ghbanck/MOI-Lite-Demo/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/ghbanck/MOI-Lite-Demo/actions/workflows/ci.yml/badge.svg"></a>
+</p>
 
 Public façade for MOI Lite’s evidence-gated demo layer.
 
@@ -190,6 +220,14 @@ In the broader architecture, MOI Lite Demo is the lightweight public slice. MOI 
 
 ### UV Carry
 
+<p>
+  <img alt="License: TBD" src="https://img.shields.io/badge/license-TBD-6e7681">
+  <img alt="Platform: Blender add-on" src="https://img.shields.io/badge/platform-Blender%20add--on-0078d4">
+  <img alt="Blender version: TBD" src="https://img.shields.io/badge/blender-TBD-6e7681">
+  <a href="https://github.com/ghbanck/UV-Carry/blob/main/docs/state/STATUS.md"><img alt="Status: pre-implementation" src="https://img.shields.io/badge/status-pre--implementation-d29922"></a>
+  <a href="https://github.com/ghbanck/UV-Carry/actions/workflows/repo-check.yml"><img alt="Repo check" src="https://github.com/ghbanck/UV-Carry/actions/workflows/repo-check.yml/badge.svg"></a>
+</p>
+
 Blender add-on in design: move a UV island and carry its texture content across every PBR map.
 
 Moving, rotating, or scaling a UV island normally leaves the painted texture behind. UV Carry is designed so the texture content assigned to a complete island follows the island across the whole PBR image set, including tangent-space normal reprojection, inside a single transaction that can be committed or rolled back.
@@ -211,6 +249,14 @@ Current state: conception / pre-implementation. No runtime capability is claimed
 
 ### GameOfLife Wallpaper
 
+<p>
+  <a href="https://github.com/ghbanck/GameOfLife-Wallpaper/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-3fb950"></a>
+  <img alt="Platform: Windows 10 | 11" src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078d4">
+  <img alt="Python 3.10+" src="https://img.shields.io/badge/python-3.10%2B-3776ab">
+  <img alt="Renderer: Direct3D 11" src="https://img.shields.io/badge/renderer-Direct3D%2011-8250df">
+  <a href="https://github.com/ghbanck/GameOfLife-Wallpaper/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/ghbanck/GameOfLife-Wallpaper/actions/workflows/ci.yml/badge.svg"></a>
+</p>
+
 Conway's Game of Life running as a live Windows wallpaper, behind the desktop icons and never covering an application.
 
 A draw mode toggled by hotkey or tray icon turns desktop clicks into cells while every other click still goes where it always did. Rendering runs on Direct3D 11 and DirectComposition, and the simulation pauses on its own when nobody can see it: covered desktop, full-screen apps, locked session, display off, or battery saver.
@@ -227,6 +273,15 @@ It ships with a ~4,800-pattern library from the Life Lexicon and LifeWiki, saved
 ---
 
 ### Vaporwave Toons
+
+<p>
+  <a href="https://github.com/ghbanck/Vaporwave-Toons/blob/main/LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-3fb950"></a>
+  <img alt="Platform: Windows 10 | 11" src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078d4">
+  <img alt="Runtime: .NET Framework 4.8" src="https://img.shields.io/badge/runtime-.NET%20Framework%204.8-512bd4">
+  <img alt="Renderer: layered windows" src="https://img.shields.io/badge/renderer-layered%20windows-8250df">
+  <a href="https://github.com/ghbanck/Vaporwave-Toons/actions/workflows/build.yml"><img alt="Build" src="https://github.com/ghbanck/Vaporwave-Toons/actions/workflows/build.yml/badge.svg"></a>
+  <a href="https://github.com/ghbanck/Vaporwave-Toons/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/ghbanck/Vaporwave-Toons?color=ff71ce&label=release"></a>
+</p>
 
 The Vaporwave theme for XPenguins, brought to Windows 10 and 11.
 
