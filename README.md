@@ -234,7 +234,7 @@ Blender add-on: move, rotate or scale complete UV islands with Blender's own G, 
 Moving a UV island after texturing normally leaves the painted texture behind, and means baking or painting again. UV Carry remembers where the islands started, lets Blender move them as it always does, and does the texture work once, at Ctrl+Enter: each island's texels are read where it started and written where it ended, a move by whole texels is copied bit for bit, rotations and scales are resampled from the island's own texels only, and Ctrl+Z undoes the texels and the UVs together.
 
 * **UV Carry Lite** is free and GPL-3.0-or-later: carries of one or several islands, padding, undo and saving. Its public repository holds the add-on and its releases.
-* **UV Carry Pro**, the paid edition, adds normal maps, Carry Into, which merges several materials into one atlas, and Pack Islands.
+* **UV Carry**, the paid edition, adds normal maps, Carry Into, which merges several materials into one atlas, and Pack Islands.
 
 Current state: 0.4.0 is a pre-release, run with Blender 5.1.1 on Windows 11. Its claims stand on recorded test reports; the physical-input runs are still pending.
 
@@ -452,6 +452,7 @@ Main areas of interest:
 
 ## Links
 
+* UV Carry Lite: https://github.com/ghbanck/UV-Carry-Lite
 * ArtStation: https://ghbanck.artstation.com
 * LinkedIn: https://www.linkedin.com/in/gustavo-banck
 * GitHub: https://github.com/ghbanck
@@ -459,7 +460,6 @@ Main areas of interest:
 * Maya Production Pipeliner: https://github.com/ghbanck/Maya-Production-Pipeliner
 * MOI Control Gate: https://github.com/ghbanck/MOI-Control-Gate
 * MOI Lite Demo: https://github.com/ghbanck/MOI-Lite-Demo
-* UV Carry Lite: https://github.com/ghbanck/UV-Carry-Lite
 * GameOfLife Wallpaper: https://github.com/ghbanck/GameOfLife-Wallpaper
 * Vaporwave Toons: https://github.com/ghbanck/Vaporwave-Toons
 * Production Workflow Control Study: https://www.artstation.com/artwork/XJyKXl
