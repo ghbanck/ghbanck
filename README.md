@@ -75,7 +75,7 @@ The specific software or pipeline may be familiar or completely new. What matter
   <a href="https://github.com/ghbanck/UV-Carry-Lite/blob/main/LICENSE"><img alt="License: GPL-3.0-or-later" src="https://img.shields.io/badge/license-GPL--3.0--or--later-2ea44f"></a>
   <img alt="Platform: Blender add-on" src="https://img.shields.io/badge/platform-Blender%20add--on-0078d4">
   <img alt="Blender version: 5.1" src="https://img.shields.io/badge/blender-5.1-e87d0d">
-  <a href="https://github.com/ghbanck/UV-Carry-Lite/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/ghbanck/UV-Carry-Lite?label=release&color=d29922"></a>
+  <a href="https://github.com/ghbanck/UV-Carry-Lite/releases"><img alt="Release" src="https://img.shields.io/github/v/release/ghbanck/UV-Carry-Lite?include_prereleases&sort=semver&label=release&color=d29922"></a>
 </p>
 
 **Move UVs. Carry Textures.**
@@ -92,7 +92,7 @@ Tested with Blender 5.1.1 on Windows 11.
 <a href="https://github.com/ghbanck/UV-Carry-Lite">
   <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
 </a>
-<a href="https://github.com/ghbanck/UV-Carry-Lite/releases/latest">
+<a href="https://github.com/ghbanck/UV-Carry-Lite/releases">
   <img src="https://img.shields.io/badge/Download_UV_Carry_Lite-9AD7D2?style=for-the-badge" alt="Download UV Carry Lite">
 </a>
 
