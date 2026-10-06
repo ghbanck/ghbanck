@@ -335,11 +335,18 @@ This case is my public-facing pipeline constitution: a concise guide to how I th
 
 ### Canvas Segmentation Tool
 
-Sanitized case study demonstrating my thinking behind an internal production tool created in a professional Epic Games context.
+Framing guides as part of the environment, not lines drawn over a screen share.
 
-The tool focused on frontend visual validation, framing consistency, canvas segmentation, and repeatable presentation review workflows.
+Cosmetics and UI elements used to be framed against guide lines drawn by hand over the screen: each reviewer drew their own, the guides were lost when the session closed, and sharing that overlay on a call slowed the whole review down. The tool generates the guides inside the environment, so every review starts from the same reference.
 
-This case represents my approach to tooling: identify repeated manual judgment, convert it into a clearer visual system, and reduce inconsistency without removing the artist or implementer from the loop.
+How it works:
+
+* **Exact segmentation:** the canvas is divided exactly, so a half or a third lands on the same pixel for every reviewer instead of wherever a hand put it;
+* **Generated, not drawn:** grids, rulers and guide lines come from the canvas itself, so they come back identical in every session;
+* **Live metrics:** any element inside the canvas reports its measurements in real time, in pixels and in integer layout units;
+* **Nothing extra on the stream:** the guides live in the environment, so a review over a call shares the scene, not an additional overlay.
+
+Sanitized case study of an internal tool from a professional Epic Games context: no source code, builds or internal assets. The production story behind it is on ArtStation.
 
 <a href="https://www.artstation.com/artwork/nJaK04">
   <img src="https://img.shields.io/badge/View_Portfolio_Case-111111?style=for-the-badge" alt="View Portfolio Case">
@@ -387,7 +394,7 @@ Selected production impact:
 * Supported Fortnite cosmetic implementation and pipeline improvement work across 7 live-service seasons in Unreal Engine
 * Contributed to implementation, validation, fixing, and maintenance of high-volume cosmetic assets from internal and external sources
 * Resolved a release-critical backlog of roughly 500 pickaxe presentation issues in less than one week under hard production deadline
-* Created Canvas Segmentation Tool to standardize frontend framing validation, canvas segmentation, and visual presentation checks
+* Created Canvas Segmentation Tool: framing guides generated inside the environment, with exact canvas divisions and live pixel and unit metrics, in place of hand-drawn overlays
 * Created EOB automation tooling to reduce repetitive post-hardlock setup work and improve implementation consistency during release preparation
 * Proposed a single-source-of-truth pipeline direction connecting upstream production inputs to final Unreal outputs through validation, ID synchronization, structured data generation, and output logging
 
