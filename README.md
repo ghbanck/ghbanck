@@ -2,11 +2,15 @@
 
 **Technical Art · Systems Architecture · Game Development Pipeline · Production Tools**
 
-I build production infrastructure at the intersection of Art and Engineering — tools, pipelines, validation systems, and integration layers that move assets reliably from content creation to runtime.
+I build production infrastructure at the intersection of Art and Engineering: tools, pipelines, validation systems, and integration layers that move assets reliably from content creation to runtime, for artists, technical artists, and implementation teams.
 
-I approach recurring production problems as systems problems. Rather than solving the same class of issue again through isolated scripts or manual procedures, I look for the responsibilities that can be made explicit, reusable, testable, and maintainable.
+I treat recurring production problems as systems problems. Instead of fixing the same class of issue again by hand or with a one-off script, I make the responsibility explicit, as a data contract, a validation gate, or a tool with a dry run, so it can be reused, tested, and trusted.
 
-My background in art and content production gives me a practical view of pipeline engineering: infrastructure only creates value when it reduces friction for the people who use it.
+A core part of that is risk-first production thinking: I red-team a workflow before I trust it.
+
+I come from art and content production, so I judge infrastructure by one measure: whether it takes friction away from the people who use it.
+
+I am not defined by a single DCC, engine, or language. The platform can change; the method stays the same: understand the production problem, structure the input, protect the operation, validate the output, and make the result easier to repeat.
 
 ---
 
@@ -169,7 +173,7 @@ The implemented workflow is:
 1. scan scene facts;
 2. classify objects into handoff routes;
 3. build a route plan;
-4. preserve unsafe or ambiguous content — referenced, instanced, and
+4. preserve unsafe or ambiguous content: referenced, instanced, and
    rig/deformer-sensitive nodes remain report-only and are never moved;
 5. preview changes through a strictly non-mutating Dry Run;
 6. Apply safe operations inside a single named undo chunk, with validated
