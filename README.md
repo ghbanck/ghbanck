@@ -42,7 +42,8 @@ The specific software or pipeline may be familiar or completely new. What matter
 
 | Project                       | Type                                             | Focus                                                                                                                                              | Status                                |
 | ----------------------------- | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| **UV Carry**                  | Blender Add-on                                   | Move UVs. Carry Textures.: move, rotate or scale UV islands and the texture follows them, in every image of their materials                        | Lite free (GPL), UV Carry paid       |
+| **[UV Carry](https://github.com/ghbanck/UV-Carry)** | Blender Add-on | Move UVs. Carry Textures.: move, rotate, scale or pack UV islands and every texture follows them, even into one atlas made from many materials | Paid edition (GPL) / coming soon |
+| **[UV Carry Lite](https://github.com/ghbanck/UV-Carry-Lite)** | Blender Add-on | The free edition: move, rotate or scale UV islands and the texture follows them, without normal maps | Free (GPL) / public release |
 | **PolyCount Wizard**          | Public Production Tool / Documented Tooling Case | Mesh budget diagnostics, scene density review, object-level validation                                                                             | Public documentation / private source |
 | **Maya Production Pipeliner** | Tooling Lab / Production Scaffold                | Maya scene organization, safety-aware routing, production handoff clarity                                                                          | Public scaffold / in development      |
 | **MOI Control Gate**          | Public Architecture / Control-Gate Thesis        | Control-before-automation architecture for evidence boundaries, LLM output review, workflow trust, release boundaries, and epistemic drift control | Public architecture                   |
@@ -72,31 +73,39 @@ The specific software or pipeline may be familiar or completely new. What matter
 ### UV Carry
 
 <p>
-  <a href="https://github.com/ghbanck/UV-Carry-Lite/blob/main/LICENSE"><img alt="License: GPL-3.0-or-later" src="https://img.shields.io/badge/license-GPL--3.0--or--later-2ea44f"></a>
+  <img alt="License: GPL-3.0-or-later" src="https://img.shields.io/badge/license-GPL--3.0--or--later-2ea44f">
   <img alt="Platform: Blender add-on" src="https://img.shields.io/badge/platform-Blender%20add--on-0078d4">
   <img alt="Blender version: 5.1" src="https://img.shields.io/badge/blender-5.1-e87d0d">
-  <a href="https://github.com/ghbanck/UV-Carry-Lite/releases"><img alt="Release" src="https://img.shields.io/github/v/release/ghbanck/UV-Carry-Lite?include_prereleases&sort=semver&label=release&color=d29922"></a>
 </p>
 
 **Move UVs. Carry Textures.**
 
-Blender add-on: move, rotate or scale complete UV islands with Blender's own G, R and S, press Ctrl+Enter, and the texture under them follows them, in every image of their materials.
+Blender add-on: move, rotate, scale or pack complete UV islands with Blender's own tools, press Ctrl+Enter, and every texture of their materials follows them, even into one atlas made from many materials.
 
-Moving a UV island after texturing normally leaves the painted texture behind, and means baking or painting again. UV Carry remembers where the islands started, lets Blender move them as it always does, and does the texture work once, at Ctrl+Enter: each island's texels are read where it started and written where it ended, a move by whole texels is copied bit for bit, rotations and scales are resampled from the island's own texels only, and Ctrl+Z undoes the texels and the UVs together.
-
-* **UV Carry Lite** is free and GPL-3.0-or-later: carries of one or several islands, padding, undo and saving. Its public repository holds the add-on and its releases.
-* **[UV Carry](https://github.com/ghbanck/UV-Carry)**, the paid edition, adds normal maps, Carry Into, which merges several materials into one atlas, and Pack Islands.
+Moving a UV island after texturing normally leaves the painted texture behind, and means baking or painting again. UV Carry remembers where the islands started, lets Blender move them as it always does, and does the texture work once, at Ctrl+Enter: each island's texels are read where it started and written where it ended, a move by whole texels is copied bit for bit, rotations and scales are resampled from the island's own texels only, and Ctrl+Z undoes the texels, the UVs and the materials together. Tangent-space normal maps keep their relief when an island turns, and Carry Into merges the islands of several materials into one atlas.
 
 Tested with Blender 5.1.1 on Windows 11.
+
+<a href="https://github.com/ghbanck/UV-Carry">
+  <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
+</a>
+<a href="https://github.com/ghbanck/UV-Carry">
+  <img src="https://img.shields.io/badge/UV_Carry-3CCFE6?style=for-the-badge" alt="UV Carry">
+</a>
+
+#### UV Carry Lite
+
+<p>
+  <a href="https://github.com/ghbanck/UV-Carry-Lite/releases"><img alt="Release" src="https://img.shields.io/github/v/release/ghbanck/UV-Carry-Lite?include_prereleases&sort=semver&label=release&color=d29922"></a>
+</p>
+
+The free edition, GPL-3.0-or-later: carries of one or several islands, padding, undo and saving, without normal maps. Its public repository holds the add-on and its releases.
 
 <a href="https://github.com/ghbanck/UV-Carry-Lite">
   <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
 </a>
 <a href="https://github.com/ghbanck/UV-Carry-Lite/releases">
   <img src="https://img.shields.io/badge/Download_UV_Carry_Lite-9AD7D2?style=for-the-badge" alt="Download UV Carry Lite">
-</a>
-<a href="https://github.com/ghbanck/UV-Carry">
-  <img src="https://img.shields.io/badge/See_UV_Carry-3CCFE6?style=for-the-badge" alt="See UV Carry">
 </a>
 
 ---
