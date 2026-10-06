@@ -2,9 +2,7 @@
 
 **Technical Art · Systems Architecture · Game Development Pipeline · Production Tools**
 
-I work at the intersection of Technical Art, production pipelines, tools, and systems architecture in game development.
-
-My focus is the technical layer between Art and Engineering: building tools, defining production workflows, and designing the interfaces, validation mechanisms, and shared foundations that make asset handoffs more explicit, reusable, and reliable.
+I build production infrastructure at the intersection of Art and Engineering — tools, pipelines, validation systems, and integration layers that move assets reliably from content creation to runtime.
 
 I approach recurring production problems as systems problems. Rather than solving the same class of issue again through isolated scripts or manual procedures, I look for the responsibilities that can be made explicit, reusable, testable, and maintainable.
 
