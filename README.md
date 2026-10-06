@@ -2,15 +2,11 @@
 
 **Technical Art · Systems Architecture · Game Development Pipeline · Production Tools**
 
-I build production infrastructure at the intersection of Art and Engineering: tools, pipelines, validation systems, and integration layers that move assets reliably from content creation to runtime, for artists, technical artists, and implementation teams.
+I build production infrastructure at the intersection of Art and Engineering: tools, pipelines, validation systems, and integration layers that move assets reliably from content creation to runtime.
 
-I treat recurring production problems as systems problems. Instead of fixing the same class of issue again by hand or with a one-off script, I make the responsibility explicit, as a data contract, a validation gate, or a tool with a dry run, so it can be reused, tested, and trusted.
-
-A core part of that is risk-first production thinking: I red-team a workflow before I trust it.
+I treat recurring production problems as systems problems: instead of fixing the same class of issue again by hand or with a one-off script, I make the responsibility explicit, as a data contract, a validation gate, or a tool with a dry run, so it can be reused, tested, and trusted.
 
 I come from art and content production, so I judge infrastructure by one measure: whether it takes friction away from the people who use it.
-
-I am not defined by a single DCC, engine, or language. The platform can change; the method stays the same: understand the production problem, structure the input, protect the operation, validate the output, and make the result easier to repeat.
 
 ---
 
