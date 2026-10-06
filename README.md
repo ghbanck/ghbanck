@@ -85,7 +85,7 @@ Blender add-on: move, rotate or scale complete UV islands with Blender's own G, 
 Moving a UV island after texturing normally leaves the painted texture behind, and means baking or painting again. UV Carry remembers where the islands started, lets Blender move them as it always does, and does the texture work once, at Ctrl+Enter: each island's texels are read where it started and written where it ended, a move by whole texels is copied bit for bit, rotations and scales are resampled from the island's own texels only, and Ctrl+Z undoes the texels and the UVs together.
 
 * **UV Carry Lite** is free and GPL-3.0-or-later: carries of one or several islands, padding, undo and saving. Its public repository holds the add-on and its releases.
-* **UV Carry**, the paid edition, adds normal maps, Carry Into, which merges several materials into one atlas, and Pack Islands.
+* **[UV Carry](https://github.com/ghbanck/UV-Carry)**, the paid edition, adds normal maps, Carry Into, which merges several materials into one atlas, and Pack Islands.
 
 Tested with Blender 5.1.1 on Windows 11.
 
@@ -94,6 +94,9 @@ Tested with Blender 5.1.1 on Windows 11.
 </a>
 <a href="https://github.com/ghbanck/UV-Carry-Lite/releases">
   <img src="https://img.shields.io/badge/Download_UV_Carry_Lite-9AD7D2?style=for-the-badge" alt="Download UV Carry Lite">
+</a>
+<a href="https://github.com/ghbanck/UV-Carry">
+  <img src="https://img.shields.io/badge/See_UV_Carry-3CCFE6?style=for-the-badge" alt="See UV Carry">
 </a>
 
 ---
@@ -453,6 +456,7 @@ Main areas of interest:
 
 ## Links
 
+* UV Carry: https://github.com/ghbanck/UV-Carry
 * UV Carry Lite: https://github.com/ghbanck/UV-Carry-Lite
 * ArtStation: https://ghbanck.artstation.com
 * LinkedIn: https://www.linkedin.com/in/gustavo-banck
