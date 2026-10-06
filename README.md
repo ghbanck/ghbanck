@@ -89,7 +89,7 @@ Tested with Blender 5.1.1 on Windows 11.
   <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
 </a>
 <a href="https://github.com/ghbanck/UV-Carry">
-  <img src="https://img.shields.io/badge/UV_Carry-3CCFE6?style=for-the-badge" alt="UV Carry">
+  <img src="https://img.shields.io/badge/UV_Carry-9AD7D2?style=for-the-badge" alt="UV Carry">
 </a>
 
 #### UV Carry Lite
