@@ -1,38 +1,40 @@
 # Gustavo Henrique Banck
 
-**Technical Artist | Production Tools | Pipeline Support | Asset Validation | Workflow-Control Systems**
+**Technical Art · Systems Architecture · Game Development Pipeline · Production Tools**
 
-I build production-facing tools, documentation, and workflow systems for artists, technical artists, and implementation teams.
+I work at the intersection of Technical Art, production pipelines, tools, and systems architecture in game development.
 
-My work sits between art production, technical constraints, content implementation, pipeline clarity, validation logic, and workflow reliability. I focus on turning ambiguous production problems into structured tools, safer handoff processes, repeatable validation logic, and clearer technical decisions.
+My focus is the technical layer between Art and Engineering: building tools, defining production workflows, and designing the interfaces, validation mechanisms, and shared foundations that make asset handoffs more explicit, reusable, and reliable.
 
-A core part of my strength is risk-first production thinking: I tend to red-team workflows before trusting them.
+I approach recurring production problems as systems problems. Rather than solving the same class of issue again through isolated scripts or manual procedures, I look for the responsibilities that can be made explicit, reusable, testable, and maintainable.
 
-I am not defined by a single DCC, engine, scripting language, or workflow domain. My strength is entering production systems, understanding their constraints, identifying hidden risk, and turning friction into clearer tools, safer workflows, validation logic, and traceable handoff.
-
-The platform can change. The method stays consistent: understand the production problem, structure the input, protect the operation, validate the output, and make the result easier to repeat.
-
+My background in art and content production gives me a practical view of pipeline engineering: infrastructure only creates value when it reduces friction for the people who use it.
 
 ---
 
-## Core Direction
+## Direction
 
-I am currently expanding my tooling work across production environments, technical constraints, DCC workflows, and workflow-control systems.
+### Professional
 
-My focus is not simply writing scripts for tools I already know. It is applying production systems thinking to workflows that need clearer input handling, classification, safety gates, validation, reporting, internal QA, documentation, and handoff clarity.
+Game development infrastructure that artists can trust:
 
-Current public and documented work includes:
+* production pipelines built on shared foundations: data contracts, stable asset IDs, manifests, intake and validation gates;
+* artist-facing tools that are non-destructive by design: staging first, dry run before mutation, undo, readable reports;
+* runtime integration: the path from DCC output to engine-ready content;
+* validation and automation in CI, so that a rule is checked by the pipeline instead of remembered by a person.
 
-* asset diagnostics, mesh review, and scene-density feedback;
-* Maya scene organization, safe routing, and production handoff structure;
-* evidence-gated AI workflow claims, output review, and public control-gate architecture;
-* UV Carry, a Blender add-on whose textures follow the UV islands you move: UV Carry Lite, free, and UV Carry, the paid edition;
-* native Windows desktop applications with GPU rendering, tray UX, and portable single-file releases;
-* large-scale asset implementation, frontend consistency, and release-preparation workflows;
-* production automation that reduced roughly one week of manual post-hardlock work to about one minute through metadata checks, structured validation, and safer release-preparation support;
-* pipeline documentation that turns complex technical behavior into readable implementation plans, test checklists, and public-facing project structure.
+### Study
 
-The specific software or pipeline may be familiar or completely new. What matters is the production problem, the constraints around it, the risk of getting it wrong, and the structure needed to make the workflow reliable.
+What I am studying and building now:
+
+* **Texture-space tooling in Blender:** resampling, tangent-space normal maps and atlasing, through UV Carry;
+* **Maya-native production tooling:** safety-aware scene organization and handoff, through Maya Production Pipeliner;
+* **Pipeline architecture:** layered pipelines, data contracts, acceptance gates and decision registers;
+* **2D animation and engine delivery:** frame decimation by optical flow, PNG and GIF sequences, Spine automation through its CLI, bitmap fonts for Godot;
+* **Evidence-gated AI workflows:** what a workflow may trust before model output becomes action, and epistemic drift in LLMs, through MOI Control Gate and the article [Deriva Epistemológica em LLMs](https://www.linkedin.com/in/gustavo-banck/recent-activity/articles/);
+* **Native Windows applications:** Direct3D 11 and DirectComposition rendering, layered windows, portable single-file releases.
+
+Current focus: Technical Art · Production Pipelines · Tools Development · Systems Architecture · Runtime Integration · Validation & Automation
 
 ---
 
@@ -425,48 +427,11 @@ That is the standard I bring to production tooling: I do not wait for a bug to p
 
 ---
 
-## Current Direction
-
-I am currently organizing independent tools into public documentation, case studies, GitHub repositories, and portfolio-ready releases.
-
-Main areas of interest:
-
-### Technical Art and Production Tools
-
-- Technical Art
-- Tools and Pipeline
-- Asset Implementation
-- Content Validation
-- Workflow Automation
-- Production UX for artists
-- Production tooling across unfamiliar pipelines
-
-### Scene, Asset, and Handoff Systems
-
-- Scene organization and handoff systems
-- Asset diagnostics
-- Mesh review
-- Scene-density feedback
-- Edge QA standardization
-- Controlled remesh workflows
-- Reporting and test checklists
-
-### Workflow Control and Validation Systems
-
-- Workflow-control architecture
-- Source-of-truth and validation systems
-- Evidence-gated AI workflow design
-- LLM output review and epistemic drift control
-- Human decision separation
-- Release-boundary control
-
----
-
 ## Links
 
 * UV Carry: https://github.com/ghbanck/UV-Carry
 * UV Carry Lite: https://github.com/ghbanck/UV-Carry-Lite
-* ArtStation: https://ghbanck.artstation.com
+* ArtStation: https://www.artstation.com/ghbanck
 * LinkedIn: https://www.linkedin.com/in/gustavo-banck
 * GitHub: https://github.com/ghbanck
 * PolyCount Wizard: https://github.com/ghbanck/PolyCount-Wizard
