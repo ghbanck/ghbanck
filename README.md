@@ -62,7 +62,7 @@ Current focus: Technical Art · Production Pipelines · Tools Development · Sys
 | Project                               | Type                                       | Focus                                                                                                     | Status                                                      |
 | ------------------------------------- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | **Production Workflow Control Study** | Mindset Guide / Compact Study              | Pipeline reliability, workflow control, internal QA, validation, and handoff logic                        | Public case study                                           |
-| **HS FE GuideTool**                   | Sanitized Internal Tool Case Study         | Frontend visual validation, framing consistency, canvas segmentation                                      | Public portfolio case                                       |
+| **Canvas Segmentation Tool**          | Sanitized Internal Tool Case Study         | Frontend visual validation, framing consistency, canvas segmentation                                      | Public portfolio case                                       |
 | **EOB Automation Tool**               | Sanitized Production Automation Case Study | Post-hardlock release preparation, metadata checks, structured validation, and implementation consistency | Reduced roughly one week of manual work to about one minute |
 | **Edge QA Wizard**                    | Tooling Lab                                | Edge QA standardization, scalable asset review, project-wide technical consistency                        | In development                                              |
 | **Remesher Wizard**                   | Tooling Lab                                | Mesh cleanup, controlled remesh workflows, topology review                                                | In development                                              |
@@ -333,7 +333,7 @@ This case is my public-facing pipeline constitution: a concise guide to how I th
 
 ## Production Tooling Case Studies
 
-### HS FE GuideTool
+### Canvas Segmentation Tool
 
 Sanitized case study demonstrating my thinking behind an internal production tool created in a professional Epic Games context.
 
@@ -345,7 +345,7 @@ This case represents my approach to tooling: identify repeated manual judgment, 
   <img src="https://img.shields.io/badge/View_Portfolio_Case-111111?style=for-the-badge" alt="View Portfolio Case">
 </a>
 <a href="https://www.artstation.com/artwork/nJaK04">
-  <img src="https://img.shields.io/badge/HS_FE_GuideTool-9AD7D2?style=for-the-badge" alt="HS FE GuideTool">
+  <img src="https://img.shields.io/badge/Canvas_Segmentation_Tool-9AD7D2?style=for-the-badge" alt="Canvas Segmentation Tool">
 </a>
 
 ---
@@ -387,7 +387,7 @@ Selected production impact:
 * Supported Fortnite cosmetic implementation and pipeline improvement work across 7 live-service seasons in Unreal Engine
 * Contributed to implementation, validation, fixing, and maintenance of high-volume cosmetic assets from internal and external sources
 * Resolved a release-critical backlog of roughly 500 pickaxe presentation issues in less than one week under hard production deadline
-* Created HS FE GuideTool to standardize frontend framing validation, canvas segmentation, and visual presentation checks
+* Created Canvas Segmentation Tool to standardize frontend framing validation, canvas segmentation, and visual presentation checks
 * Created EOB automation tooling to reduce repetitive post-hardlock setup work and improve implementation consistency during release preparation
 * Proposed a single-source-of-truth pipeline direction connecting upstream production inputs to final Unreal outputs through validation, ID synchronization, structured data generation, and output logging
 
@@ -441,5 +441,5 @@ That is the standard I bring to production tooling: I do not wait for a bug to p
 * GameOfLife Wallpaper: https://github.com/ghbanck/GameOfLife-Wallpaper
 * Vaporwave Toons: https://github.com/ghbanck/Vaporwave-Toons
 * Production Workflow Control Study: https://www.artstation.com/artwork/XJyKXl
-* HS FE GuideTool: https://www.artstation.com/artwork/nJaK04
+* Canvas Segmentation Tool: https://www.artstation.com/artwork/nJaK04
 * Email: [gustavohenriquebanck@gmail.com](mailto:gustavohenriquebanck@gmail.com)
