@@ -1,38 +1,38 @@
 # Gustavo Henrique Banck
 
-**Technical Artist | Production Tools | Pipeline Support | Asset Validation | Workflow-Control Systems**
+**Technical Art · Systems Architecture · Game Development Pipeline · Production Tools**
 
-I build production-facing tools, documentation, and workflow systems for artists, technical artists, and implementation teams.
+I build production infrastructure at the intersection of Art and Engineering: tools, pipelines, validation systems, and integration layers that move assets reliably from content creation to runtime.
 
-My work sits between art production, technical constraints, content implementation, pipeline clarity, validation logic, and workflow reliability. I focus on turning ambiguous production problems into structured tools, safer handoff processes, repeatable validation logic, and clearer technical decisions.
+I treat recurring production problems as systems problems: instead of fixing the same class of issue again by hand or with a one-off script, I make the responsibility explicit, as a data contract, a validation gate, or a tool with a dry run, so it can be reused, tested, and trusted.
 
-A core part of my strength is risk-first production thinking: I tend to red-team workflows before trusting them.
-
-I am not defined by a single DCC, engine, scripting language, or workflow domain. My strength is entering production systems, understanding their constraints, identifying hidden risk, and turning friction into clearer tools, safer workflows, validation logic, and traceable handoff.
-
-The platform can change. The method stays consistent: understand the production problem, structure the input, protect the operation, validate the output, and make the result easier to repeat.
-
+I come from art and content production, so I judge infrastructure by one measure: whether it takes friction away from the people who use it.
 
 ---
 
-## Core Direction
+## Direction
 
-I am currently expanding my tooling work across production environments, technical constraints, DCC workflows, and workflow-control systems.
+### Professional
 
-My focus is not simply writing scripts for tools I already know. It is applying production systems thinking to workflows that need clearer input handling, classification, safety gates, validation, reporting, internal QA, documentation, and handoff clarity.
+Game development infrastructure that artists can trust:
 
-Current public and documented work includes:
+* production pipelines built on shared foundations: data contracts, stable asset IDs, manifests, intake and validation gates;
+* artist-facing tools that are non-destructive by design: staging first, dry run before mutation, undo, readable reports;
+* runtime integration: the path from DCC output to engine-ready content;
+* validation and automation in CI, so that a rule is checked by the pipeline instead of remembered by a person.
 
-* asset diagnostics, mesh review, and scene-density feedback;
-* Maya scene organization, safe routing, and production handoff structure;
-* evidence-gated AI workflow claims, output review, and public control-gate architecture;
-* UV Carry, a Blender add-on whose textures follow the UV islands you move: UV Carry Lite, free, and UV Carry, the paid edition;
-* native Windows desktop applications with GPU rendering, tray UX, and portable single-file releases;
-* large-scale asset implementation, frontend consistency, and release-preparation workflows;
-* production automation that reduced roughly one week of manual post-hardlock work to about one minute through metadata checks, structured validation, and safer release-preparation support;
-* pipeline documentation that turns complex technical behavior into readable implementation plans, test checklists, and public-facing project structure.
+### Study
 
-The specific software or pipeline may be familiar or completely new. What matters is the production problem, the constraints around it, the risk of getting it wrong, and the structure needed to make the workflow reliable.
+What I am studying and building now:
+
+* **Texture-space tooling in Blender:** resampling, tangent-space normal maps and atlasing, through UV Carry;
+* **Maya-native production tooling:** safety-aware scene organization and handoff, through Maya Production Pipeliner;
+* **Pipeline architecture:** layered pipelines, data contracts, acceptance gates and decision registers;
+* **2D animation and engine delivery:** frame decimation by optical flow, PNG and GIF sequences, Spine automation through its CLI, bitmap fonts for Godot;
+* **Evidence-gated AI workflows:** what a workflow may trust before model output becomes action, and epistemic drift in LLMs, through MOI Control Gate and the article [Deriva Epistemológica em LLMs](https://www.linkedin.com/in/gustavo-banck/recent-activity/articles/);
+* **Native Windows applications:** Direct3D 11 and DirectComposition rendering, layered windows, portable single-file releases.
+
+Current focus: Technical Art · Production Pipelines · Tools Development · Systems Architecture · Runtime Integration · Validation & Automation
 
 ---
 
@@ -60,7 +60,7 @@ The specific software or pipeline may be familiar or completely new. What matter
 | Project                               | Type                                       | Focus                                                                                                     | Status                                                      |
 | ------------------------------------- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
 | **Production Workflow Control Study** | Mindset Guide / Compact Study              | Pipeline reliability, workflow control, internal QA, validation, and handoff logic                        | Public case study                                           |
-| **HS FE GuideTool**                   | Sanitized Internal Tool Case Study         | Frontend visual validation, framing consistency, canvas segmentation                                      | Public portfolio case                                       |
+| **Canvas Segmentation Tool**          | Sanitized Internal Tool Case Study         | Frontend visual validation, framing consistency, canvas segmentation                                      | Public portfolio case                                       |
 | **EOB Automation Tool**               | Sanitized Production Automation Case Study | Post-hardlock release preparation, metadata checks, structured validation, and implementation consistency | Reduced roughly one week of manual work to about one minute |
 | **Edge QA Wizard**                    | Tooling Lab                                | Edge QA standardization, scalable asset review, project-wide technical consistency                        | In development                                              |
 | **Remesher Wizard**                   | Tooling Lab                                | Mesh cleanup, controlled remesh workflows, topology review                                                | In development                                              |
@@ -89,7 +89,7 @@ Tested with Blender 5.1.1 on Windows 11.
   <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
 </a>
 <a href="https://github.com/ghbanck/UV-Carry">
-  <img src="https://img.shields.io/badge/UV_Carry-3CCFE6?style=for-the-badge" alt="UV Carry">
+  <img src="https://img.shields.io/badge/UV_Carry-9AD7D2?style=for-the-badge" alt="UV Carry">
 </a>
 
 #### UV Carry Lite
@@ -169,7 +169,7 @@ The implemented workflow is:
 1. scan scene facts;
 2. classify objects into handoff routes;
 3. build a route plan;
-4. preserve unsafe or ambiguous content — referenced, instanced, and
+4. preserve unsafe or ambiguous content: referenced, instanced, and
    rig/deformer-sensitive nodes remain report-only and are never moved;
 5. preview changes through a strictly non-mutating Dry Run;
 6. Apply safe operations inside a single named undo chunk, with validated
@@ -331,19 +331,26 @@ This case is my public-facing pipeline constitution: a concise guide to how I th
 
 ## Production Tooling Case Studies
 
-### HS FE GuideTool
+### Canvas Segmentation Tool
 
-Sanitized case study demonstrating my thinking behind an internal production tool created in a professional Epic Games context.
+Framing guides as part of the environment, not lines drawn over a screen share.
 
-The tool focused on frontend visual validation, framing consistency, canvas segmentation, and repeatable presentation review workflows.
+Cosmetics and UI elements used to be framed against guide lines drawn by hand over the screen: each reviewer drew their own, the guides were lost when the session closed, and sharing that overlay on a call slowed the whole review down. The tool generates the guides inside the environment, so every review starts from the same reference.
 
-This case represents my approach to tooling: identify repeated manual judgment, convert it into a clearer visual system, and reduce inconsistency without removing the artist or implementer from the loop.
+How it works:
+
+* **Exact segmentation:** the canvas is divided exactly, so a half or a third lands on the same pixel for every reviewer instead of wherever a hand put it;
+* **Generated, not drawn:** grids, rulers and guide lines come from the canvas itself, so they come back identical in every session;
+* **Live metrics:** any element inside the canvas reports its measurements in real time, in pixels and in integer layout units;
+* **Nothing extra on the stream:** the guides live in the environment, so a review over a call shares the scene, not an additional overlay.
+
+Sanitized case study of an internal tool from a professional Epic Games context: no source code, builds or internal assets. The production story behind it is on ArtStation.
 
 <a href="https://www.artstation.com/artwork/nJaK04">
   <img src="https://img.shields.io/badge/View_Portfolio_Case-111111?style=for-the-badge" alt="View Portfolio Case">
 </a>
 <a href="https://www.artstation.com/artwork/nJaK04">
-  <img src="https://img.shields.io/badge/HS_FE_GuideTool-9AD7D2?style=for-the-badge" alt="HS FE GuideTool">
+  <img src="https://img.shields.io/badge/Canvas_Segmentation_Tool-9AD7D2?style=for-the-badge" alt="Canvas Segmentation Tool">
 </a>
 
 ---
@@ -385,7 +392,7 @@ Selected production impact:
 * Supported Fortnite cosmetic implementation and pipeline improvement work across 7 live-service seasons in Unreal Engine
 * Contributed to implementation, validation, fixing, and maintenance of high-volume cosmetic assets from internal and external sources
 * Resolved a release-critical backlog of roughly 500 pickaxe presentation issues in less than one week under hard production deadline
-* Created HS FE GuideTool to standardize frontend framing validation, canvas segmentation, and visual presentation checks
+* Created Canvas Segmentation Tool: framing guides generated inside the environment, with exact canvas divisions and live pixel and unit metrics, in place of hand-drawn overlays
 * Created EOB automation tooling to reduce repetitive post-hardlock setup work and improve implementation consistency during release preparation
 * Proposed a single-source-of-truth pipeline direction connecting upstream production inputs to final Unreal outputs through validation, ID synchronization, structured data generation, and output logging
 
@@ -425,48 +432,11 @@ That is the standard I bring to production tooling: I do not wait for a bug to p
 
 ---
 
-## Current Direction
-
-I am currently organizing independent tools into public documentation, case studies, GitHub repositories, and portfolio-ready releases.
-
-Main areas of interest:
-
-### Technical Art and Production Tools
-
-- Technical Art
-- Tools and Pipeline
-- Asset Implementation
-- Content Validation
-- Workflow Automation
-- Production UX for artists
-- Production tooling across unfamiliar pipelines
-
-### Scene, Asset, and Handoff Systems
-
-- Scene organization and handoff systems
-- Asset diagnostics
-- Mesh review
-- Scene-density feedback
-- Edge QA standardization
-- Controlled remesh workflows
-- Reporting and test checklists
-
-### Workflow Control and Validation Systems
-
-- Workflow-control architecture
-- Source-of-truth and validation systems
-- Evidence-gated AI workflow design
-- LLM output review and epistemic drift control
-- Human decision separation
-- Release-boundary control
-
----
-
 ## Links
 
 * UV Carry: https://github.com/ghbanck/UV-Carry
 * UV Carry Lite: https://github.com/ghbanck/UV-Carry-Lite
-* ArtStation: https://ghbanck.artstation.com
+* ArtStation: https://www.artstation.com/ghbanck
 * LinkedIn: https://www.linkedin.com/in/gustavo-banck
 * GitHub: https://github.com/ghbanck
 * PolyCount Wizard: https://github.com/ghbanck/PolyCount-Wizard
@@ -476,5 +446,5 @@ Main areas of interest:
 * GameOfLife Wallpaper: https://github.com/ghbanck/GameOfLife-Wallpaper
 * Vaporwave Toons: https://github.com/ghbanck/Vaporwave-Toons
 * Production Workflow Control Study: https://www.artstation.com/artwork/XJyKXl
-* HS FE GuideTool: https://www.artstation.com/artwork/nJaK04
+* Canvas Segmentation Tool: https://www.artstation.com/artwork/nJaK04
 * Email: [gustavohenriquebanck@gmail.com](mailto:gustavohenriquebanck@gmail.com)
