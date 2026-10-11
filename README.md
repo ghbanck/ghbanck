@@ -1,38 +1,40 @@
 # Gustavo Henrique Banck
 
-**Technical Art · Systems Architecture · Game Development Pipeline · Production Tools**
+**Technical Art · Production Pipelines · Production Systems Architecture · Tools Development**
 
 I build production infrastructure at the intersection of Art and Engineering: tools, pipelines, validation systems, and integration layers that move assets reliably from content creation to runtime.
 
-I treat recurring production problems as systems problems: instead of fixing the same class of issue again by hand or with a one-off script, I make the responsibility explicit, as a data contract, a validation gate, or a tool with a dry run, so it can be reused, tested, and trusted.
+I turn recurring production problems into explicit, reusable technical capabilities: data contracts, validation gates, automation, and tools with controlled mutation paths that can be tested, observed, and trusted.
 
-I come from art and content production, so I judge infrastructure by one measure: whether it takes friction away from the people who use it.
+I come from art and content production, so I judge infrastructure by whether it reduces friction without hiding risk or pushing unnecessary complexity onto artists.
 
 ---
 
-## Direction
+## Focus
 
-### Professional
+* **Production pipelines** built on shared foundations: data contracts, stable asset identity, manifests, intake, and validation gates.
+* **Artist-facing tools** designed around safe operation: staging, dry runs, controlled mutation, undo, and readable reports.
+* **Runtime integration:** reliable paths from DCC output to engine-ready content.
+* **Validation and automation:** turning rules that people would otherwise need to remember into checks the pipeline can enforce.
 
-Game development infrastructure that artists can trust:
+---
 
-* production pipelines built on shared foundations: data contracts, stable asset IDs, manifests, intake and validation gates;
-* artist-facing tools that are non-destructive by design: staging first, dry run before mutation, undo, readable reports;
-* runtime integration: the path from DCC output to engine-ready content;
-* validation and automation in CI, so that a rule is checked by the pipeline instead of remembered by a person.
+## Production Background
 
-### Study
+My background spans asset production, Technical Art, implementation, workflow improvement, tooling, and production automation in game development, including live-service production on Fortnite Battle Royale.
 
-What I am studying and building now:
+That production experience is what drives my approach to tools and infrastructure: systems should make the correct path easier, failures visible, and repetitive work unnecessary.
 
-* **Texture-space tooling in Blender:** resampling, tangent-space normal maps and atlasing, through UV Carry;
-* **Maya-native production tooling:** safety-aware scene organization and handoff, through Maya Production Pipeliner;
-* **Pipeline architecture:** layered pipelines, data contracts, acceptance gates and decision registers;
-* **2D animation and engine delivery:** frame decimation by optical flow, PNG and GIF sequences, Spine automation through its CLI, bitmap fonts for Godot;
-* **Evidence-gated AI workflows:** what a workflow may trust before model output becomes action, and epistemic drift in LLMs, through MOI Control Gate and the article [Deriva Epistemológica em LLMs](https://www.linkedin.com/in/gustavo-banck/recent-activity/articles/);
-* **Native Windows applications:** Direct3D 11 and DirectComposition rendering, layered windows, portable single-file releases.
+---
 
-Current focus: Technical Art · Production Pipelines · Tools Development · Systems Architecture · Runtime Integration · Validation & Automation
+## Current Work & Research
+
+* **Texture-space tooling in Blender:** resampling, tangent-space normal maps, texture relocation, and atlasing through **UV Carry**.
+* **Maya-native production tooling:** safety-aware scene organization, routing, validation, and handoff through **Maya Production Pipeliner**.
+* **Pipeline architecture:** layered production systems, data contracts, acceptance gates, asset identity, and explicit decision boundaries.
+* **2D asset and engine delivery:** frame decimation, image sequences, Spine CLI automation, bitmap-font workflows, and runtime-oriented asset preparation.
+* **Evidence-gated AI workflows:** controlling what a workflow may trust before model output becomes action, including work on epistemic drift through **MOI Control Gate** and the article [Deriva Epistemológica em LLMs](https://www.linkedin.com/in/gustavo-banck/recent-activity/articles/).
+* **Native Windows applications:** Direct3D 11, DirectComposition, layered windows, desktop integration, and portable releases.
 
 ---
 
@@ -40,30 +42,30 @@ Current focus: Technical Art · Production Pipelines · Tools Development · Sys
 
 ### Public Projects
 
-| Project                       | Type                                             | Focus                                                                                                                                              | Status                                |
-| ----------------------------- | ------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| **UV Carry**                  | Blender Add-on                                   | Move UVs. Carry Textures.: move, rotate or scale UV islands and the texture follows them, in every image of their materials                        | Lite free (GPL), UV Carry paid       |
-| **PolyCount Wizard**          | Public Production Tool / Documented Tooling Case | Mesh budget diagnostics, scene density review, object-level validation                                                                             | Public documentation / private source |
-| **Maya Production Pipeliner** | Tooling Lab / Production Scaffold                | Maya scene organization, safety-aware routing, production handoff clarity                                                                          | Public scaffold / in development      |
-| **MOI Control Gate**          | Public Architecture / Control-Gate Thesis        | Control-before-automation architecture for evidence boundaries, LLM output review, workflow trust, release boundaries, and epistemic drift control | Public architecture                   |
-| **MOI Lite Demo**             | Public Demo / Façade Layer                       | Public-facing demonstration of MOI Lite’s evidence-gated demo layer; a small, sanitized slice of the private runtime’s control logic               | Public demo                           |
+| **Project**                   | **Type**                        | **Focus**                                                                                                                         | **Status**                            |
+| ----------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| **UV Carry**                  | Blender Add-on                  | Move UVs. Carry Textures. Move, rotate, or scale UV islands while carrying the corresponding texture data across material images. | Lite free (GPL), UV Carry paid        |
+| **Maya Production Pipeliner** | Public Tooling Lab              | Maya scene organization, safety-aware routing, validation, and production handoff.                                                | Public scaffold / in development      |
+| **PolyCount Wizard**          | Documented Production Tool      | Mesh-budget diagnostics, scene-density review, and object-level validation.                                                       | Public documentation / private source |
+| **MOI Control Gate**          | Architecture / Research Project | Evidence boundaries, LLM-output review, workflow trust, release control, and epistemic-drift mitigation.                          | Public architecture                   |
+| **MOI Lite Demo**             | Public Demo                     | Sanitized demonstration of an evidence-gated control layer derived from the broader MOI architecture.                             | Public demo                           |
 
-### Desktop Projects
+### Production Case Studies & Tooling Labs
 
-| Project                   | Type                               | Focus                                                                                         | Status         |
-| ------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------- | -------------- |
-| **GameOfLife Wallpaper**  | Windows Desktop App (Python)       | Conway's Game of Life as a live, drawable wallpaper behind the desktop icons, Direct3D 11      | Public release |
-| **Vaporwave Toons**       | Windows Desktop App (C# / .NET)    | XPenguins' Vaporwave theme ported to Windows 10/11: toons that walk, climb and ride on windows | Public release |
+| **Project**                           | **Type**                                   | **Focus**                                                                                                  | **Status / Result**                                         |
+| ------------------------------------- | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| **EOB Automation Tool**               | Sanitized Production Automation Case Study | Post-hardlock release preparation, metadata checks, structured validation, and implementation consistency. | Reduced roughly one week of manual work to about one minute |
+| **Canvas Segmentation Tool**          | Sanitized Internal Tool Case Study         | Frontend visual validation, framing consistency, and canvas segmentation.                                  | Public portfolio case                                       |
+| **Production Workflow Control Study** | Production Systems Study                   | Pipeline reliability, workflow control, internal QA, validation, and handoff logic.                        | Public case study                                           |
+| **Edge QA Wizard**                    | Tooling Lab                                | Edge-QA standardization, scalable asset review, and project-wide technical consistency.                    | In development                                              |
+| **Remesher Wizard**                   | Tooling Lab                                | Mesh cleanup, controlled remeshing workflows, and topology review.                                         | In development                                              |
 
-### Case Studies / Tooling Labs
+### Other Engineering Projects
 
-| Project                               | Type                                       | Focus                                                                                                     | Status                                                      |
-| ------------------------------------- | ------------------------------------------ | --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| **Production Workflow Control Study** | Mindset Guide / Compact Study              | Pipeline reliability, workflow control, internal QA, validation, and handoff logic                        | Public case study                                           |
-| **Canvas Segmentation Tool**          | Sanitized Internal Tool Case Study         | Frontend visual validation, framing consistency, canvas segmentation                                      | Public portfolio case                                       |
-| **EOB Automation Tool**               | Sanitized Production Automation Case Study | Post-hardlock release preparation, metadata checks, structured validation, and implementation consistency | Reduced roughly one week of manual work to about one minute |
-| **Edge QA Wizard**                    | Tooling Lab                                | Edge QA standardization, scalable asset review, project-wide technical consistency                        | In development                                              |
-| **Remesher Wizard**                   | Tooling Lab                                | Mesh cleanup, controlled remesh workflows, topology review                                                | In development                                              |
+| **Project**              | **Type**                        | **Focus**                                                                                                                  | **Status**     |
+| ------------------------ | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| **GameOfLife Wallpaper** | Windows Desktop App (Python)    | Conway's Game of Life as an interactive live wallpaper behind desktop icons, using Direct3D 11.                            | Public release |
+| **Vaporwave Toons**      | Windows Desktop App (C# / .NET) | Windows 10/11 port inspired by XPenguins' Vaporwave theme, with desktop characters that interact with application windows. | Public release |
 
 ---
 
@@ -380,23 +382,6 @@ Designed to support predefined QA rules, consistent review signals, and scalable
 Production-oriented mesh cleanup and remeshing assistant for controlled topology review.
 
 Designed as a workflow support tool for testing cleanup behavior, reviewing topology conditions, and reducing repetitive manual mesh preparation steps.
-
----
-
-## Production Background
-
-Former Fortnite asset implementation experience supporting high-volume live-service content delivery, asset setup, presentation consistency, troubleshooting, and workflow improvement.
-
-Selected production impact:
-
-* Supported Fortnite cosmetic implementation and pipeline improvement work across 7 live-service seasons in Unreal Engine
-* Contributed to implementation, validation, fixing, and maintenance of high-volume cosmetic assets from internal and external sources
-* Resolved a release-critical backlog of roughly 500 pickaxe presentation issues in less than one week under hard production deadline
-* Created Canvas Segmentation Tool: framing guides generated inside the environment, with exact canvas divisions and live pixel and unit metrics, in place of hand-drawn overlays
-* Created EOB automation tooling to reduce repetitive post-hardlock setup work and improve implementation consistency during release preparation
-* Proposed a single-source-of-truth pipeline direction connecting upstream production inputs to final Unreal outputs through validation, ID synchronization, structured data generation, and output logging
-
-Broader production experience includes technical art, 3D asset production, scene assembly, technical integration, Unity and Unreal workflows, QA support, documentation, and cross-discipline collaboration.
 
 ---
 
