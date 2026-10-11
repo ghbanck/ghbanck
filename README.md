@@ -46,7 +46,7 @@ That production experience is what drives my approach to tools and infrastructur
 | ----------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
 | **UV Carry**                  | Blender Add-on                  | Move UVs. Carry Textures. Move, rotate, or scale UV islands while carrying the corresponding texture data across material images. | Lite free (GPL), UV Carry paid        |
 | **FrameForge**                | Windows Desktop App             | Screen ruler, grid and guide overlay: pixel measurements, aspect frames, symmetry and pen notes on top of any app.                | Freeware public release               |
-| **Maya Production Pipeliner** | Public Tooling Lab              | Maya scene organization, safety-aware routing, validation, and production handoff.                                                | Public scaffold / in development      |
+| **Maya Production Pipeliner** | Public Tooling Lab              | Maya scene organization, safety-aware routing, validation, and production handoff.                                                | v0.9.0 pre-release / 1.0 in progress  |
 | **PolyCount Wizard**          | Documented Production Tool      | Mesh-budget diagnostics, scene-density review, and object-level validation.                                                       | Public documentation / private source |
 | **MOI Control Gate**          | Architecture / Research Project | Evidence boundaries, LLM-output review, workflow trust, release control, and epistemic-drift mitigation.                          | Public architecture                   |
 | **MOI Lite Demo**             | Public Demo                     | Sanitized demonstration of an evidence-gated control layer derived from the broader MOI architecture.                             | Public demo                           |
@@ -173,7 +173,7 @@ Private scope: source code and distributable builds unless prepared for public r
   <img alt="Platform: Autodesk Maya" src="https://img.shields.io/badge/platform-Autodesk%20Maya-0078d4">
   <img alt="Python: mayapy" src="https://img.shields.io/badge/python-mayapy-3776ab">
   <img alt="Smoke validated: Maya 2027.1" src="https://img.shields.io/badge/smoke%20validated-Maya%202027.1-8250df">
-  <img alt="Status: not release-ready" src="https://img.shields.io/badge/status-not%20release--ready-d29922">
+  <a href="https://github.com/ghbanck/Maya-Production-Pipeliner/releases"><img alt="Release" src="https://img.shields.io/github/v/release/ghbanck/Maya-Production-Pipeliner?include_prereleases&sort=semver&label=release&color=d29922"></a>
 </p>
 
 Safety-aware Maya Python utility for scene organization and production handoff.
@@ -206,9 +206,9 @@ The implemented workflow is:
 
 Dry Run and Apply are implemented and validated through a validation-script
 suite and a per-slice manual test checklist, covering mayapy runs and Maya
-2027.1 smoke validation. Leaf reclassification after user edits is the
-remaining open case, and the tool is intentionally not yet marked
-release-ready.
+2027.1 smoke validation, including leaf reclassification after user edits.
+Version 0.9.0 is out as a pre-release, and the 1.0 release is being closed
+out.
 
 This project also marks a deliberate return: I started my career in Maya in
 2018 and worked with Maya rigs, imports, and exports in AAA production before
