@@ -33,7 +33,7 @@ That production experience is what drives my approach to tools and infrastructur
 * **Maya-native production tooling:** safety-aware scene organization, routing, validation, and handoff through **Maya Production Pipeliner**.
 * **Pipeline architecture:** layered production systems, data contracts, acceptance gates, asset identity, and explicit decision boundaries.
 * **2D asset and engine delivery:** frame decimation, image sequences, Spine CLI automation, bitmap-font workflows, and runtime-oriented asset preparation.
-* **Evidence-gated AI workflows:** controlling what a workflow may trust before model output becomes action, including work on epistemic drift through **MOI Control Gate** and the article [Deriva Epistemológica em LLMs](https://www.linkedin.com/in/gustavo-banck/recent-activity/articles/).
+* **Evidence-gated AI workflows:** controlling what a workflow may trust before model output becomes action, including work on epistemic drift through **MOI Control Gate** and the article [Epistemic Drift in LLMs](https://www.linkedin.com/pulse/epistemic-drift-llms-gustavo-banck-q4xhf/).
 * **Native Windows applications:** Direct3D 11, DirectComposition, layered windows, desktop integration, and portable releases.
 
 ---
@@ -45,7 +45,8 @@ That production experience is what drives my approach to tools and infrastructur
 | **Project**                   | **Type**                        | **Focus**                                                                                                                         | **Status**                            |
 | ----------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
 | **UV Carry**                  | Blender Add-on                  | Move UVs. Carry Textures. Move, rotate, or scale UV islands while carrying the corresponding texture data across material images. | Lite free (GPL), UV Carry paid        |
-| **Maya Production Pipeliner** | Public Tooling Lab              | Maya scene organization, safety-aware routing, validation, and production handoff.                                                | Public scaffold / in development      |
+| **FrameForge**                | Windows Desktop App             | Screen ruler, grid and guide overlay: pixel measurements, aspect frames, symmetry and pen notes on top of any app.                | Freeware public release               |
+| **Maya Production Pipeliner** | Public Tooling Lab              | Maya scene organization, safety-aware routing, validation, and production handoff.                                                | v0.9.0 pre-release / 1.0 in progress  |
 | **PolyCount Wizard**          | Documented Production Tool      | Mesh-budget diagnostics, scene-density review, and object-level validation.                                                       | Public documentation / private source |
 | **MOI Control Gate**          | Architecture / Research Project | Evidence boundaries, LLM-output review, workflow trust, release control, and epistemic-drift mitigation.                          | Public architecture                   |
 | **MOI Lite Demo**             | Public Demo                     | Sanitized demonstration of an evidence-gated control layer derived from the broader MOI architecture.                             | Public demo                           |
@@ -111,6 +112,31 @@ The free edition, GPL-3.0-or-later: carries of one or several islands, padding, 
 
 ---
 
+### FrameForge
+
+<p>
+  <a href="https://github.com/ghbanck/FrameForge/blob/main/LICENSE.md"><img alt="License: freeware" src="https://img.shields.io/badge/license-freeware-6e7681"></a>
+  <img alt="Platform: Windows 10 | 11" src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078d4">
+  <img alt="Built with: Python and Qt 6" src="https://img.shields.io/badge/built%20with-Python%20%7C%20Qt%206-3776ab">
+  <img alt="Source: private" src="https://img.shields.io/badge/source-private-6e7681">
+  <a href="https://github.com/ghbanck/FrameForge/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/ghbanck/FrameForge?color=b3141f&label=release"></a>
+</p>
+
+A screen ruler, grid and guide overlay for Windows: measure anything, on top of everything.
+
+FrameForge lays a transparent canvas over the screen, always on top of every window. Lines, boxes, angle crosses and symmetry mirrors report their size in physical pixels while they are dragged, grids divide the canvas into exact cells, and ruler guides, aspect frames from 4:3 to 32:9 and a fine dip pen for notes complete the set. Clicks on empty areas still reach the app below, and saved layouts come back with Ctrl+1 to Ctrl+9 from any app.
+
+It covers checking a site against its design, perspective and symmetry before a sketch, sizes taken from a photo, 3D framing, HUD safe areas and video crops. Six themes each bring their own strokes, anchors, palette and wheel menu. Distributed as a single portable `.exe`.
+
+<a href="https://github.com/ghbanck/FrameForge">
+  <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
+</a>
+<a href="https://github.com/ghbanck/FrameForge">
+  <img src="https://img.shields.io/badge/FrameForge-9AD7D2?style=for-the-badge" alt="FrameForge">
+</a>
+
+---
+
 ### PolyCount Wizard
 
 <p>
@@ -147,7 +173,7 @@ Private scope: source code and distributable builds unless prepared for public r
   <img alt="Platform: Autodesk Maya" src="https://img.shields.io/badge/platform-Autodesk%20Maya-0078d4">
   <img alt="Python: mayapy" src="https://img.shields.io/badge/python-mayapy-3776ab">
   <img alt="Smoke validated: Maya 2027.1" src="https://img.shields.io/badge/smoke%20validated-Maya%202027.1-8250df">
-  <img alt="Status: not release-ready" src="https://img.shields.io/badge/status-not%20release--ready-d29922">
+  <a href="https://github.com/ghbanck/Maya-Production-Pipeliner/releases"><img alt="Release" src="https://img.shields.io/github/v/release/ghbanck/Maya-Production-Pipeliner?include_prereleases&sort=semver&label=release&color=d29922"></a>
 </p>
 
 Safety-aware Maya Python utility for scene organization and production handoff.
@@ -180,9 +206,9 @@ The implemented workflow is:
 
 Dry Run and Apply are implemented and validated through a validation-script
 suite and a per-slice manual test checklist, covering mayapy runs and Maya
-2027.1 smoke validation. Leaf reclassification after user edits is the
-remaining open case, and the tool is intentionally not yet marked
-release-ready.
+2027.1 smoke validation, including leaf reclassification after user edits.
+Version 0.9.0 is out as a pre-release, and the 1.0 release is being closed
+out.
 
 This project also marks a deliberate return: I started my career in Maya in
 2018 and worked with Maya rigs, imports, and exports in AAA production before
@@ -421,6 +447,7 @@ That is the standard I bring to production tooling: I do not wait for a bug to p
 
 * UV Carry: https://github.com/ghbanck/UV-Carry
 * UV Carry Lite: https://github.com/ghbanck/UV-Carry-Lite
+* FrameForge: https://github.com/ghbanck/FrameForge
 * ArtStation: https://www.artstation.com/ghbanck
 * LinkedIn: https://www.linkedin.com/in/gustavo-banck
 * GitHub: https://github.com/ghbanck
