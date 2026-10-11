@@ -45,6 +45,7 @@ That production experience is what drives my approach to tools and infrastructur
 | **Project**                   | **Type**                        | **Focus**                                                                                                                         | **Status**                            |
 | ----------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
 | **UV Carry**                  | Blender Add-on                  | Move UVs. Carry Textures. Move, rotate, or scale UV islands while carrying the corresponding texture data across material images. | Lite free (GPL), UV Carry paid        |
+| **FrameForge**                | Windows Desktop App             | Screen ruler, grid and guide overlay: pixel measurements, aspect frames, symmetry and pen notes on top of any app.                | Freeware public release               |
 | **Maya Production Pipeliner** | Public Tooling Lab              | Maya scene organization, safety-aware routing, validation, and production handoff.                                                | Public scaffold / in development      |
 | **PolyCount Wizard**          | Documented Production Tool      | Mesh-budget diagnostics, scene-density review, and object-level validation.                                                       | Public documentation / private source |
 | **MOI Control Gate**          | Architecture / Research Project | Evidence boundaries, LLM-output review, workflow trust, release control, and epistemic-drift mitigation.                          | Public architecture                   |
@@ -66,7 +67,6 @@ That production experience is what drives my approach to tools and infrastructur
 | ------------------------ | ------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------- |
 | **GameOfLife Wallpaper** | Windows Desktop App (Python)    | Conway's Game of Life as an interactive live wallpaper behind desktop icons, using Direct3D 11.                            | Public release |
 | **Vaporwave Toons**      | Windows Desktop App (C# / .NET) | Windows 10/11 port inspired by XPenguins' Vaporwave theme, with desktop characters that interact with application windows. | Public release |
-| **FrameForge**           | Windows Desktop App (Python)    | Screen ruler, grid and guide overlay: pixel measurements, aspect frames, symmetry and pen notes on top of any app.         | Public release |
 
 ---
 
@@ -108,6 +108,31 @@ The free edition, GPL-3.0-or-later: carries of one or several islands, padding, 
 </a>
 <a href="https://github.com/ghbanck/UV-Carry-Lite/releases">
   <img src="https://img.shields.io/badge/Download_UV_Carry_Lite-9AD7D2?style=for-the-badge" alt="Download UV Carry Lite">
+</a>
+
+---
+
+### FrameForge
+
+<p>
+  <a href="https://github.com/ghbanck/FrameForge/blob/main/LICENSE.md"><img alt="License: freeware" src="https://img.shields.io/badge/license-freeware-6e7681"></a>
+  <img alt="Platform: Windows 10 | 11" src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078d4">
+  <img alt="Built with: Python and Qt 6" src="https://img.shields.io/badge/built%20with-Python%20%7C%20Qt%206-3776ab">
+  <img alt="Source: private" src="https://img.shields.io/badge/source-private-6e7681">
+  <a href="https://github.com/ghbanck/FrameForge/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/ghbanck/FrameForge?color=b3141f&label=release"></a>
+</p>
+
+A screen ruler, grid and guide overlay for Windows: measure anything, on top of everything.
+
+FrameForge lays a transparent canvas over the screen, always on top of every window. Lines, boxes, angle crosses and symmetry mirrors report their size in physical pixels while they are dragged, grids divide the canvas into exact cells, and ruler guides, aspect frames from 4:3 to 32:9 and a fine dip pen for notes complete the set. Clicks on empty areas still reach the app below, and saved layouts come back with Ctrl+1 to Ctrl+9 from any app.
+
+It covers checking a site against its design, perspective and symmetry before a sketch, sizes taken from a photo, 3D framing, HUD safe areas and video crops. Six themes each bring their own strokes, anchors, palette and wheel menu. Distributed as a single portable `.exe`.
+
+<a href="https://github.com/ghbanck/FrameForge">
+  <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
+</a>
+<a href="https://github.com/ghbanck/FrameForge">
+  <img src="https://img.shields.io/badge/FrameForge-9AD7D2?style=for-the-badge" alt="FrameForge">
 </a>
 
 ---
@@ -263,31 +288,6 @@ In the broader architecture, MOI Lite Demo is the lightweight public slice. MOI 
 
 
 ## Desktop Projects
-
-### FrameForge
-
-<p>
-  <a href="https://github.com/ghbanck/FrameForge/blob/main/LICENSE.md"><img alt="License: freeware" src="https://img.shields.io/badge/license-freeware-6e7681"></a>
-  <img alt="Platform: Windows 10 | 11" src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078d4">
-  <img alt="Built with: Python and Qt 6" src="https://img.shields.io/badge/built%20with-Python%20%7C%20Qt%206-3776ab">
-  <img alt="Source: private" src="https://img.shields.io/badge/source-private-6e7681">
-  <a href="https://github.com/ghbanck/FrameForge/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/ghbanck/FrameForge?color=b3141f&label=release"></a>
-</p>
-
-A screen ruler, grid and guide overlay for Windows: measure anything, on top of everything.
-
-FrameForge lays a transparent canvas over the screen, always on top of every window. Lines, boxes, angle crosses and symmetry mirrors report their size in physical pixels while they are dragged, grids divide the canvas into exact cells, and ruler guides, aspect frames from 4:3 to 32:9 and a fine dip pen for notes complete the set. Clicks on empty areas still reach the app below, and saved layouts come back with Ctrl+1 to Ctrl+9 from any app.
-
-It covers checking a site against its design, perspective and symmetry before a sketch, sizes taken from a photo, 3D framing, HUD safe areas and video crops. Six themes each bring their own strokes, anchors, palette and wheel menu. Distributed as a single portable `.exe`.
-
-<a href="https://github.com/ghbanck/FrameForge">
-  <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
-</a>
-<a href="https://github.com/ghbanck/FrameForge">
-  <img src="https://img.shields.io/badge/FrameForge-9AD7D2?style=for-the-badge" alt="FrameForge">
-</a>
-
----
 
 ### GameOfLife Wallpaper
 
@@ -447,6 +447,7 @@ That is the standard I bring to production tooling: I do not wait for a bug to p
 
 * UV Carry: https://github.com/ghbanck/UV-Carry
 * UV Carry Lite: https://github.com/ghbanck/UV-Carry-Lite
+* FrameForge: https://github.com/ghbanck/FrameForge
 * ArtStation: https://www.artstation.com/ghbanck
 * LinkedIn: https://www.linkedin.com/in/gustavo-banck
 * GitHub: https://github.com/ghbanck
@@ -456,7 +457,6 @@ That is the standard I bring to production tooling: I do not wait for a bug to p
 * MOI Lite Demo: https://github.com/ghbanck/MOI-Lite-Demo
 * GameOfLife Wallpaper: https://github.com/ghbanck/GameOfLife-Wallpaper
 * Vaporwave Toons: https://github.com/ghbanck/Vaporwave-Toons
-* FrameForge: https://github.com/ghbanck/FrameForge
 * Production Workflow Control Study: https://www.artstation.com/artwork/XJyKXl
 * Canvas Segmentation Tool: https://www.artstation.com/artwork/nJaK04
 * Email: [gustavohenriquebanck@gmail.com](mailto:gustavohenriquebanck@gmail.com)
