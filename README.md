@@ -33,7 +33,7 @@ That production experience is what drives my approach to tools and infrastructur
 * **Maya-native production tooling:** safety-aware scene organization, routing, validation, and handoff through **Maya Production Pipeliner**.
 * **Pipeline architecture:** layered production systems, data contracts, acceptance gates, asset identity, and explicit decision boundaries.
 * **2D asset and engine delivery:** frame decimation, image sequences, Spine CLI automation, bitmap-font workflows, and runtime-oriented asset preparation.
-* **Evidence-gated AI workflows:** controlling what a workflow may trust before model output becomes action, including work on epistemic drift through **MOI Control Gate** and the article [Deriva Epistemológica em LLMs](https://www.linkedin.com/in/gustavo-banck/recent-activity/articles/).
+* **Evidence-gated AI workflows:** controlling what a workflow may trust before model output becomes action, including work on epistemic drift through **MOI Control Gate** and the article [Epistemic Drift in LLMs](https://www.linkedin.com/pulse/epistemic-drift-llms-gustavo-banck-q4xhf/).
 * **Native Windows applications:** Direct3D 11, DirectComposition, layered windows, desktop integration, and portable releases.
 
 ---
