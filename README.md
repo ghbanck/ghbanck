@@ -45,7 +45,7 @@ That production experience is what drives my approach to tools and infrastructur
 | **Project**                   | **Type**                        | **Focus**                                                                                                                         | **Status**                            |
 | ----------------------------- | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
 | **UV Carry**                  | Blender Add-on                  | Move UVs. Carry Textures. Move, rotate, or scale UV islands while carrying the corresponding texture data across material images. | Lite free (GPL), UV Carry paid        |
-| **FrameForge Metrics**        | Windows Desktop App             | Screen ruler, grid and guide overlay: pixel measurements, aspect frames, symmetry and pen notes on top of any app.                | Freeware on Microsoft Store and GitHub |
+| **FrameKnife Metrics**        | Windows Desktop App             | Screen ruler, grid and guide overlay: pixel measurements, aspect frames, symmetry and pen notes on top of any app.                | Freeware on Microsoft Store and GitHub |
 | **Maya Production Pipeliner** | Public Tooling Lab              | Maya scene organization, safety-aware routing, validation, and production handoff.                                                | v0.9.0 pre-release / 1.0 in progress  |
 | **PolyCount Wizard**          | Documented Production Tool      | Mesh-budget diagnostics, scene-density review, and object-level validation.                                                       | Public documentation / private source |
 | **MOI Control Gate**          | Architecture / Research Project | Evidence boundaries, LLM-output review, workflow trust, release control, and epistemic-drift mitigation.                          | Public architecture                   |
@@ -112,19 +112,19 @@ The free edition, GPL-3.0-or-later: carries of one or several islands, padding, 
 
 ---
 
-### FrameForge Metrics
+### FrameKnife Metrics
 
 <p>
-  <a href="https://github.com/ghbanck/FrameForge-Metrics/blob/main/LICENSE.md"><img alt="License: freeware" src="https://img.shields.io/badge/license-freeware-6e7681"></a>
+  <a href="https://github.com/ghbanck/FrameKnife-Metrics/blob/main/LICENSE.md"><img alt="License: freeware" src="https://img.shields.io/badge/license-freeware-6e7681"></a>
   <img alt="Platform: Windows 10 | 11" src="https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-0078d4">
   <img alt="Built with: Python and Qt 6" src="https://img.shields.io/badge/built%20with-Python%20%7C%20Qt%206-3776ab">
   <img alt="Source: private" src="https://img.shields.io/badge/source-private-6e7681">
-  <a href="https://github.com/ghbanck/FrameForge-Metrics/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/ghbanck/FrameForge-Metrics?color=b3141f&label=release"></a>
+  <a href="https://github.com/ghbanck/FrameKnife-Metrics/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/ghbanck/FrameKnife-Metrics?color=b3141f&label=release"></a>
 </p>
 
 A screen ruler, grid and guide overlay for Windows: measure anything, on top of everything.
 
-FrameForge Metrics lays a transparent canvas over the screen, always on top of every window. Lines, boxes, angle crosses and symmetry mirrors report their size in physical pixels while they are dragged, grids divide the canvas into exact cells, and ruler guides, aspect frames from 4:3 to 32:9 and a fine dip pen for notes complete the set. Clicks on empty areas still reach the app below, and saved layouts come back with Ctrl+1 to Ctrl+9 from any app.
+FrameKnife Metrics lays a transparent canvas over the screen, always on top of every window. Lines, boxes, angle crosses and symmetry mirrors report their size in physical pixels while they are dragged, grids divide the canvas into exact cells, and ruler guides, aspect frames from 4:3 to 32:9 and a fine dip pen for notes complete the set. Clicks on empty areas still reach the app below, and saved layouts come back with Ctrl+1 to Ctrl+9 from any app.
 
 It covers checking a site against its design, perspective and symmetry before a sketch, sizes taken from a photo, 3D framing, HUD safe areas and video crops. Six themes each bring their own strokes, anchors, palette and wheel menu. Available on the Microsoft Store and as a single portable `.exe`.
 
@@ -132,11 +132,11 @@ It covers checking a site against its design, perspective and symmetry before a 
   <a href="https://apps.microsoft.com/detail/9NGBPCBKBD7K?mode=direct"><img alt="Get it from Microsoft" src="https://get.microsoft.com/images/en-us%20dark.svg" height="44"></a>
 </p>
 
-<a href="https://github.com/ghbanck/FrameForge-Metrics">
+<a href="https://github.com/ghbanck/FrameKnife-Metrics">
   <img src="https://img.shields.io/badge/View_Repository-111111?style=for-the-badge" alt="View Repository">
 </a>
-<a href="https://github.com/ghbanck/FrameForge-Metrics">
-  <img src="https://img.shields.io/badge/FrameForge_Metrics-9AD7D2?style=for-the-badge" alt="FrameForge Metrics">
+<a href="https://github.com/ghbanck/FrameKnife-Metrics">
+  <img src="https://img.shields.io/badge/FrameKnife_Metrics-9AD7D2?style=for-the-badge" alt="FrameKnife Metrics">
 </a>
 
 ---
@@ -451,8 +451,8 @@ That is the standard I bring to production tooling: I do not wait for a bug to p
 
 * UV Carry: https://github.com/ghbanck/UV-Carry
 * UV Carry Lite: https://github.com/ghbanck/UV-Carry-Lite
-* FrameForge Metrics: https://github.com/ghbanck/FrameForge-Metrics
-* FrameForge Metrics on the Microsoft Store: https://apps.microsoft.com/detail/9NGBPCBKBD7K
+* FrameKnife Metrics: https://github.com/ghbanck/FrameKnife-Metrics
+* FrameKnife Metrics on the Microsoft Store: https://apps.microsoft.com/detail/9NGBPCBKBD7K
 * ArtStation: https://www.artstation.com/ghbanck
 * LinkedIn: https://www.linkedin.com/in/gustavo-banck
 * GitHub: https://github.com/ghbanck
